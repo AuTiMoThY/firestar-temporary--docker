@@ -23,7 +23,7 @@
 
 1. **複製環境變數檔案**
    ```bash
-   cp env.example .env
+   copy env.example .env
    ```
 
 2. **啟動 Docker 容器**
