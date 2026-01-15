@@ -1,0 +1,33 @@
+services:
+  # Nuxt.js 前台
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: test-frontend
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - .nuxt:/app/.nuxt
+    ports:
+      - "${FRONTEND_PORT:-3001}:3001"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      HOST: 0.0.0.0
+      PORT: 3001
+      CI: "true"
+    networks:
+      - test-network
+    command: sh -lc "pnpm install && pnpm dev"
+
+volumes:
+  node_modules:
+    driver: local
+  .nuxt:
+    driver: local
+
+networks:
+  test-network:
+    driver: bridge
