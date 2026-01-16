@@ -9,8 +9,9 @@ useHead({
     }
 });
 
-const title = "Project Name";
-const description = "Project Description";
+const title = "Firestar 方元開發有限公司";
+const description =
+    "FIRESTAR是台灣運動服飾品牌,吸濕排汗專家,FIRESTAR是針對時下年輕人所設計的運動休閒風品牌。並以「直接、新鮮、創意」作為FIRESTAR給人最與眾不同及清新的品牌感受，進而創造出與眾不同的運動休閒風潮。";
 
 useSeoMeta({
     title,

@@ -157,6 +157,66 @@ pnpm lint
 pnpm typecheck
 ```
 
+## 靜態網站生成 (Generate)
+
+此專案支援使用 Nuxt 的 `generate` 功能來產生靜態網站檔案。
+
+### 前置條件
+
+確保 Docker 容器正在運行：
+
+```bash
+# 啟動容器（如果尚未啟動）
+docker compose up -d
+
+# 確認容器狀態
+docker compose ps
+```
+
+### 執行 Generate
+
+#### 方法 1：使用 npm/pnpm 腳本（推薦）
+
+```bash
+# 在 Docker 容器中執行 generate
+pnpm docker:generate
+```
+
+#### 方法 2：直接使用 Docker Compose 指令
+
+```bash
+# 基本 generate（開發環境）
+docker compose exec frontend sh -c "pnpm generate"
+
+# 生產環境 generate（帶環境變數）
+docker compose exec -e NODE_ENV=production -e NUXT_PUBLIC_API_BASE=https://test-sys.srl.tw frontend sh -c "pnpm generate"
+```
+
+### 生成的檔案位置
+
+執行 generate 後，生成的靜態檔案會位於：
+
+```
+.output/public/
+```
+
+由於 Docker Compose 的 volume 映射（`.:/app`），這些檔案會自動出現在專案根目錄的 `.output/public` 資料夾中。
+
+### 使用生成的檔案
+
+生成的靜態檔案可以直接部署到任何靜態網站託管服務，例如：
+- GitHub Pages
+- Netlify
+- Vercel
+- 任何支援靜態檔案的 Web 伺服器
+
+### 注意事項
+
+- 執行 generate 前，請確保容器正在運行
+- 生成的檔案會覆蓋 `.output/public` 目錄中的現有內容
+- 如需自訂輸出目錄，可以修改 `nuxt.config.ts` 中的相關設定
+- 生產環境的 generate 建議設定正確的 `NUXT_PUBLIC_API_BASE` 環境變數
+
 ## 專案結構
 
 ```
