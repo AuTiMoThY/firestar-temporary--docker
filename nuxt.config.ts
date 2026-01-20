@@ -36,9 +36,9 @@ export default defineNuxtConfig({
     // 開發伺服器配置
     devServer: {
         host: "0.0.0.0", // 綁定到所有網路介面（Docker 需要）
-        port: 8100,
+        port: 8010,
         // 注意：Nuxt 會根據實際綁定的 host 顯示 URL
-        // 即使顯示 0.0.0.0，您仍可使用 http://localhost:8100 訪問
+        // 即使顯示 0.0.0.0，您仍可使用 http://localhost:8010 訪問
     },
 
     // Vite 配置（Docker 環境中的 HMR 支援）
@@ -46,10 +46,16 @@ export default defineNuxtConfig({
         server: {
             hmr: {
                 host: "localhost",
+                port: 8010,
             },
             watch: {
                 usePolling: true, // Docker 環境中需要輪詢來檢測文件變更
-                interval: 100,
+                interval: 300, // 增加輪詢間隔以減少 CPU 使用
+                binaryInterval: 1000, // 二進制文件的輪詢間隔
+            },
+            fs: {
+                // 允許監控的目錄（包含 app 目錄）
+                strict: false,
             },
         },
     },

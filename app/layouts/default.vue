@@ -201,25 +201,25 @@
 
 /* Main Header */
 .main_header {
-    @apply relative z-[70] w-full h-[36px] max-xl:h-[66px] max-md:h-[50px];
+    @apply relative z-[70] flex items-center justify-between w-full h-[36px] max-xl:h-[66px] max-md:h-[50px];
     background-image: linear-gradient(to bottom, #ffffff, #d2d2d2);
 }
 
 .main_header .logo {
-    @apply z-[2] flex absolute top-0 bottom-0 left-4 m-auto w-40 h-9;
+    @apply z-[2] flex w-40 h-9;
 }
 
 @media (min-width: 768px) {
     .main_header .logo {
-        @apply absolute top-0 left-4;
-        bottom: unset;
+        /* @apply absolute top-0 left-4; */
+        /* bottom: unset; */
     }
 }
 
 @media (max-width: 767.98px) {
     .main_header .logo {
-        @apply w-[50px] h-[50px] absolute top-0 right-0 left-0 m-auto bg-white;
-        bottom: unset;
+        @apply w-[50px] h-[50px] bg-white;
+        /* bottom: unset; */
     }
 }
 
@@ -275,6 +275,31 @@
 .main_nav-item .small-txt {
     @apply leading-none text-xs;
     color: currentColor;
+}
+
+
+.main_nav-item.social {
+    @apply flex;
+}
+
+@media (min-width: 768px) {
+    .main_nav-item.social {
+        @apply h-9;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main_nav-item.social {
+        @apply h-full;
+    }
+}
+
+.main_nav-item .icon-add-group {
+    @apply mr-[0.6rem];
+}
+
+.main_nav-item .icon-facebook a {
+    @apply p-0;
 }
 
 /* Page Container */
@@ -426,27 +451,4 @@
     @apply w-full h-full;
 }
 
-.main_nav-item.social {
-    @apply absolute top-0 right-4 flex h-full;
-}
-
-@media (min-width: 768px) {
-    .main_nav-item.social {
-        @apply h-9;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .main_nav-item.social {
-        @apply h-full;
-    }
-}
-
-.main_nav-item .icon-add-group {
-    @apply mr-[0.6rem];
-}
-
-.main_nav-item .icon-facebook a {
-    @apply p-0;
-}
 </style>

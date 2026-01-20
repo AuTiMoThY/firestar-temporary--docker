@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { banner } from "~/constant/banner";
-import { new_pdt } from "~/constant/new_pdt";
-import { top_pdt } from "~/constant/top_pdt";
+import { new_pdt } from "~/constant/home-new_pdt";
+import { top_pdt } from "~/constant/home-top_pdt";
 
 // 獲取 baseURL - 使用 useRequestURL() 或從 window.location 獲取
 let baseURL = "/";
@@ -28,35 +28,16 @@ try {
     }
 }
 
-// 處理圖片路徑，確保包含 baseURL
-const getImagePath = (path: string) => {
-    if (!path) return "";
-    // 如果路徑已經包含 baseURL，直接返回
-    if (path.startsWith(baseURL)) return path;
-    // 如果路徑以 / 開頭，加上 baseURL（移除開頭的 /）
-    if (path.startsWith("/")) {
-        // 確保 baseURL 以 / 結尾，path 去掉開頭的 /
-        const cleanBaseURL = baseURL.endsWith("/") ? baseURL : `${baseURL}/`;
-        const cleanPath = path.startsWith("/") ? path.slice(1) : path;
-        return `${cleanBaseURL}${cleanPath}`;
-    }
-    return path;
-};
-
 const bannerList = ref(banner.map(item => ({
-    ...item,
-    image: getImagePath(item.image),
-    image_mobile: getImagePath(item.image_mobile)
+    ...item
 })));
 
 const new_pdtList = ref(new_pdt.map(item => ({
     ...item,
-    image: getImagePath(item.image)
 })));
 
 const top_pdtList = ref(top_pdt.map(item => ({
     ...item,
-    image: getImagePath(item.image)
 })));
 </script>
 <template>
@@ -213,7 +194,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
 }
 
 .new_pdt-item > .inner .inner-more {
-    @apply z-[1] flex absolute inset-0 bg-black/60 text-center items-center opacity-0 transition-opacity duration-300;
+    @apply z-[1] flex justify-center items-center absolute inset-0 w-full h-full bg-black/60 text-center items-center opacity-0 transition-opacity duration-300;
 }
 
 .new_pdt-item > .inner .txt {

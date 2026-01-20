@@ -16,7 +16,7 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 
 # 暴露端口
-EXPOSE 8100
+EXPOSE 8010
 
 # 預設命令（可在 docker-compose.yml 中覆蓋）
 CMD ["pnpm", "dev"]

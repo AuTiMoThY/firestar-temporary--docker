@@ -37,7 +37,7 @@
    ```
 
 4. **開啟瀏覽器**
-   訪問 `http://localhost:8100` 即可看到應用程式
+   訪問 `http://localhost:8010` 即可看到應用程式
 
 ### 首次啟動
 
@@ -237,13 +237,13 @@ docker-nuxt4/
 專案使用 `.env` 檔案管理環境變數，請參考 `env.example` 進行配置。
 
 主要環境變數：
-- `FRONTEND_PORT`: 前端服務端口（預設：8100）
+- `FRONTEND_PORT`: 前端服務端口（預設：8010）
 - `NODE_ENV`: 執行環境（development/production）
 - `NUXT_PUBLIC_API_BASE`: API 基礎網址
 
 ## 注意事項
 
-- 開發環境預設運行在 `http://localhost:8100`
+- 開發環境預設運行在 `http://localhost:8010`
 - 容器內的檔案變更會自動同步到本地（透過 volume 掛載）
 - 首次啟動時，`node_modules` 會建立為 Docker volume，避免與本地衝突
 - 如需修改端口，請在 `.env` 檔案中設定 `FRONTEND_PORT`
