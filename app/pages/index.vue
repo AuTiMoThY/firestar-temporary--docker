@@ -40,8 +40,8 @@ const top_pdtList = ref(top_pdt.map(item => ({
         <!-- New Products Section -->
         <section class="main_section new_pdt">
             <div class="inner">
-                <ul class="cf lis-n row no-gutters">
-                    <li v-for="item in new_pdtList" :key="item.id" class="new_pdt-item col-sm-4">
+                <ul class="new_pdt-list">
+                    <li v-for="item in new_pdtList" :key="item.id" class="new_pdt-item">
                         <NuxtLink class="inner" :to="item.link">
                             <div class="pic">
                                 <img :src="`${basePath}${item.image}`" :alt="item.alt" />
@@ -153,12 +153,12 @@ const top_pdtList = ref(top_pdt.map(item => ({
 }
 
 /* New Products */
-.new_pdt ul {
-    @apply mb-0 p-1;
+.new_pdt-list {
+    @apply flex flex-wrap mb-0 p-1;
 }
 
 .new_pdt-item {
-    @apply float-left;
+    @apply w-1/3 max-md:w-full;
 }
 
 .new_pdt-item>.inner {
