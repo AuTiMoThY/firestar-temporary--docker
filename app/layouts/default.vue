@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const config = useRuntimeConfig();
+const basePath = config.public.basePath;
+</script>
 <template>
     <!-- SVG Sprites -->
     <div class="symbols_svg d-none">
@@ -36,11 +40,11 @@
                     <NuxtLink to="/">
                         <img
                             class="logo-img d-none d-md-block"
-                            src="/images/logo.svg"
+                            :src="`${basePath}images/logo.svg`"
                             alt="Firestar 方元開發有限公司" />
                         <img
                             class="logo-m-img d-md-none"
-                            src="/images/logo-m.svg"
+                            :src="`${basePath}images/logo-m.svg`"
                             alt="Firestar 方元開發有限公司" />
                     </NuxtLink>
                 </div>
@@ -146,7 +150,7 @@
                     <div class="footer_logo">
                         <img
                             class="logo-img"
-                            src="/images/logo2.png"
+                            :src="`${basePath}images/logo2.png`"
                             alt="Firestar 方元開發有限公司" />
                     </div>
                 </div>

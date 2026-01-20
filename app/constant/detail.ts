@@ -5,10 +5,10 @@ export const detail = [
         name_tw: "立領輕鋪棉背心",
         style: "H0636",
         price: "1,780",
-        mainImage: "/images/detail/H0636-10.jpg",
+        mainImage: "images/detail/H0636-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/H0636-10.jpg",
+                image: "images/detail/H0636-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
                 isActive: true
@@ -16,10 +16,10 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/C0518-10.jpg",
+                image: "images/detail/color/C0518-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
-                mainImage: "/images/detail/H0636-10.jpg",
+                mainImage: "images/detail/H0636-10.jpg",
                 isActive: true
             }
         ],
@@ -34,15 +34,15 @@ export const detail = [
         material: "面布: 100% 尼龍 | 裡布: 100% 聚酯纖維 | 填充物: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -55,34 +55,34 @@ export const detail = [
         name_tw: "立領輕鋪棉背心",
         style: "HL039",
         price: "1,580",
-        mainImage: "/images/detail/HL039_13.jpg",
+        mainImage: "images/detail/HL039_13.jpg",
         thumbnails: [
             {
-                image: "/images/detail/HL039-10.jpg",
+                image: "images/detail/HL039-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/HL039-47.jpg",
+                image: "images/detail/HL039-47.jpg",
                 colorName: "深桃紅",
                 colorNo: "47",
                 isActive: false
             },
             {
-                image: "/images/detail/HL039-43.jpg",
+                image: "images/detail/HL039-43.jpg",
                 colorName: "粉紅",
                 colorNo: "43",
                 isActive: false
             },
             {
-                image: "/images/detail/HL039-90.jpg",
+                image: "images/detail/HL039-90.jpg",
                 colorName: "淺藍",
                 colorNo: "90",
                 isActive: false
             },
             {
-                image: "/images/detail/HL039_13.jpg",
+                image: "images/detail/HL039_13.jpg",
                 colorName: "淺灰",
                 colorNo: "13",
                 isActive: true
@@ -90,38 +90,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/H0635-10.jpg",
+                image: "images/detail/color/H0635-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
-                mainImage: "/images/detail/HL039-10.jpg",
+                mainImage: "images/detail/HL039-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/HL039-47(1).jpg",
+                image: "images/detail/color/HL039-47(1).jpg",
                 colorName: "深桃紅",
                 colorNo: "47",
-                mainImage: "/images/detail/HL039-47.jpg",
+                mainImage: "images/detail/HL039-47.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/HL039-43(1).jpg",
+                image: "images/detail/color/HL039-43(1).jpg",
                 colorName: "粉紅",
                 colorNo: "43",
-                mainImage: "/images/detail/HL039-43.jpg",
+                mainImage: "images/detail/HL039-43.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/HL039-90(1).jpg",
+                image: "images/detail/color/HL039-90(1).jpg",
                 colorName: "淺藍",
                 colorNo: "90",
-                mainImage: "/images/detail/HL039-90.jpg",
+                mainImage: "images/detail/HL039-90.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/HL039-13.jpg",
+                image: "images/detail/color/HL039-13.jpg",
                 colorName: "淺灰",
                 colorNo: "13",
-                mainImage: "/images/detail/HL039_13.jpg",
+                mainImage: "images/detail/HL039_13.jpg",
                 isActive: true
             }
         ],
@@ -135,15 +135,15 @@ export const detail = [
         material: "面布: 100% 尼龍 | 裡布: 100% 聚酯纖維 | 填充物: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -156,16 +156,16 @@ export const detail = [
         name_tw: "立領輕鋪棉背心",
         style: "H0635",
         price: "1,580",
-        mainImage: "/images/detail/H0635-93.jpg",
+        mainImage: "images/detail/H0635-93.jpg",
         thumbnails: [
             {
-                image: "/images/detail/H0635-10.jpg",
+                image: "images/detail/H0635-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/H0635-93.jpg",
+                image: "images/detail/H0635-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: true
@@ -173,17 +173,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/H0635-10(1).jpg",
+                image: "images/detail/color/H0635-10(1).jpg",
                 colorName: "黑",
                 colorNo: "10",
-                mainImage: "/images/detail/H0635-10.jpg",
+                mainImage: "images/detail/H0635-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/H0635-93(1).jpg",
+                image: "images/detail/color/H0635-93(1).jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/H0635-93.jpg",
+                mainImage: "images/detail/H0635-93.jpg",
                 isActive: true
             }
         ],
@@ -197,15 +197,15 @@ export const detail = [
         material: "面布: 100% 尼龍 | 裡布: 100% 聚酯纖維 | 填充物: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -218,34 +218,34 @@ export const detail = [
         name_tw: "棉質內刷毛圓領長袖上衣",
         style: "FL116",
         price: "1,380",
-        mainImage: "/images/detail/FL116-47.jpg",
+        mainImage: "images/detail/FL116-47.jpg",
         thumbnails: [
             {
-                image: "/images/detail/FL116-46.jpg",
+                image: "images/detail/FL116-46.jpg",
                 colorName: "桃紅",
                 colorNo: "46",
                 isActive: false
             },
             {
-                image: "/images/detail/FL116-47.jpg",
+                image: "images/detail/FL116-47.jpg",
                 colorName: "深桃紅",
                 colorNo: "47",
                 isActive: true
             },
             {
-                image: "/images/detail/FL116-47B.jpg",
+                image: "images/detail/FL116-47B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/FL116-47C.jpg",
+                image: "images/detail/FL116-47C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/FL116-47D.jpg",
+                image: "images/detail/FL116-47D.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -253,38 +253,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/FL116-46(1).jpg",
+                image: "images/detail/color/FL116-46(1).jpg",
                 colorName: "桃紅",
                 colorNo: "46",
-                mainImage: "/images/detail/FL116-46.jpg",
+                mainImage: "images/detail/FL116-46.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/FL116-47(1).jpg",
+                image: "images/detail/color/FL116-47(1).jpg",
                 colorName: "深桃紅",
                 colorNo: "47",
-                mainImage: "/images/detail/FL116-47.jpg",
+                mainImage: "images/detail/FL116-47.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/FL116-47B.jpg",
+                mainImage: "images/detail/FL116-47B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/FL116-47C.jpg",
+                mainImage: "images/detail/FL116-47C.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-03.jpg",
+                image: "images/detail/color/photo-03.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/FL116-47D.jpg",
+                mainImage: "images/detail/FL116-47D.jpg",
                 isActive: false
             }
         ],
@@ -298,15 +298,15 @@ export const detail = [
         material: "65 % 棉 / 35% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Cotton icon.jpg",
+                image: "images/detail/Cotton icon.jpg",
                 name: "含棉材質"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -319,34 +319,34 @@ export const detail = [
         name_tw: "彈性保暖圓領上衣",
         style: "AL106",
         price: "1,180",
-        mainImage: "/images/detail/AL10673.jpg",
+        mainImage: "images/detail/AL10673.jpg",
         thumbnails: [
             {
-                image: "/images/detail/AL106-17.jpg",
+                image: "images/detail/AL106-17.jpg",
                 colorName: "麻灰",
                 colorNo: "17",
                 isActive: false
             },
             {
-                image: "/images/detail/AL10673.jpg",
+                image: "images/detail/AL10673.jpg",
                 colorName: "淺紫",
                 colorNo: "73",
                 isActive: true
             },
             {
-                image: "/images/detail/AL106-43.jpg",
+                image: "images/detail/AL106-43.jpg",
                 colorName: "粉桔色",
                 colorNo: "43",
                 isActive: false
             },
             {
-                image: "/images/detail/AL106-43-B.jpg",
+                image: "images/detail/AL106-43-B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/AL106-43-C.jpg",
+                image: "images/detail/AL106-43-C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -354,38 +354,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/AL106-17(1).jpg",
+                image: "images/detail/color/AL106-17(1).jpg",
                 colorName: "麻灰",
                 colorNo: "17",
-                mainImage: "/images/detail/AL106-17.jpg",
+                mainImage: "images/detail/AL106-17.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/AL106-73.jpg",
+                image: "images/detail/color/AL106-73.jpg",
                 colorName: "淺紫",
                 colorNo: "73",
-                mainImage: "/images/detail/AL10673.jpg",
+                mainImage: "images/detail/AL10673.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/AL106-43(1).jpg",
+                image: "images/detail/color/AL106-43(1).jpg",
                 colorName: "粉桔色",
                 colorNo: "43",
-                mainImage: "/images/detail/AL106-43.jpg",
+                mainImage: "images/detail/AL106-43.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/AL106-43-B.jpg",
+                mainImage: "images/detail/AL106-43-B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/AL106-43-C.jpg",
+                mainImage: "images/detail/AL106-43-C.jpg",
                 isActive: false
             }
         ],
@@ -407,34 +407,34 @@ export const detail = [
         name_tw: "立領鋪棉背心",
         style: "H1935",
         price: "1,960",
-        mainImage: "/images/detail/H1935-10.jpg",
+        mainImage: "images/detail/H1935-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/H1935-60.jpg",
+                image: "images/detail/H1935-60.jpg",
                 colorName: "軍綠",
                 colorNo: "60",
                 isActive: false
             },
             {
-                image: "/images/detail/H1935-10.jpg",
+                image: "images/detail/H1935-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/H1935-10B.jpg",
+                image: "images/detail/H1935-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/H1931-10C.jpg",
+                image: "images/detail/H1931-10C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/H1931-10E.jpg",
+                image: "images/detail/H1931-10E.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -442,38 +442,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/H1931-60.jpg",
+                image: "images/detail/color/H1931-60.jpg",
                 colorName: "軍綠",
                 colorNo: "60",
-                mainImage: "/images/detail/H1935-60.jpg",
+                mainImage: "images/detail/H1935-60.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/H1931-10.jpg",
+                image: "images/detail/color/H1931-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
-                mainImage: "/images/detail/H1935-10.jpg",
+                mainImage: "images/detail/H1935-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/H1935-10B.jpg",
+                mainImage: "images/detail/H1935-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/H1931-10C.jpg",
+                mainImage: "images/detail/H1931-10C.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-03.jpg",
+                image: "images/detail/color/photo-03.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/H1931-10E.jpg",
+                mainImage: "images/detail/H1931-10E.jpg",
                 isActive: false
             }
         ],
@@ -487,15 +487,15 @@ export const detail = [
         material: "100% 尼龍",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -508,10 +508,10 @@ export const detail = [
         name_tw: "可拆帽鋪棉外套(長版)",
         style: "HL138",
         price: "2,980",
-        mainImage: "/images/detail/HL138-10.jpg",
+        mainImage: "images/detail/HL138-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/HL138-10.jpg",
+                image: "images/detail/HL138-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
                 isActive: true
@@ -519,10 +519,10 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/HL137-10.jpg",
+                image: "images/detail/color/HL137-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
-                mainImage: "/images/detail/HL138-10.jpg",
+                mainImage: "images/detail/HL138-10.jpg",
                 isActive: true
             }
         ],
@@ -537,15 +537,15 @@ export const detail = [
         material: "100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -558,40 +558,40 @@ export const detail = [
         name_tw: "可拆帽鋪棉外套",
         style: "HL137",
         price: "2,580",
-        mainImage: "/images/detail/HL137-43.jpg",
+        mainImage: "images/detail/HL137-43.jpg",
         thumbnails: [
             {
-                image: "/images/detail/HL137-43.jpg",
+                image: "images/detail/HL137-43.jpg",
                 colorName: "粉紅",
                 colorNo: "43",
                 isActive: true
             },
             {
-                image: "/images/detail/HL137-90.jpg",
+                image: "images/detail/HL137-90.jpg",
                 colorName: "淺藍",
                 colorNo: "90",
                 isActive: false
             },
             {
-                image: "/images/detail/HL137-10.jpg",
+                image: "images/detail/HL137-10.jpg",
                 colorName: "黑",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/HL137-10B.jpg",
+                image: "images/detail/HL137-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/HL137-10C.jpg",
+                image: "images/detail/HL137-10C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/HL137-10D.jpg",
+                image: "images/detail/HL137-10D.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -599,45 +599,45 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/HL137-43(1).jpg",
+                image: "images/detail/color/HL137-43(1).jpg",
                 colorName: "粉紅",
                 colorNo: "43",
-                mainImage: "/images/detail/HL137-43.jpg",
+                mainImage: "images/detail/HL137-43.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/HL137-90(1).jpg",
+                image: "images/detail/color/HL137-90(1).jpg",
                 colorName: "淺藍",
                 colorNo: "90",
-                mainImage: "/images/detail/HL137-90.jpg",
+                mainImage: "images/detail/HL137-90.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/HL137-10(1).jpg",
+                image: "images/detail/color/HL137-10(1).jpg",
                 colorName: "黑",
                 colorNo: "10",
-                mainImage: "/images/detail/HL137-10.jpg",
+                mainImage: "images/detail/HL137-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/HL137-10B.jpg",
+                mainImage: "images/detail/HL137-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/HL137-10C.jpg",
+                mainImage: "images/detail/HL137-10C.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-03.jpg",
+                image: "images/detail/color/photo-03.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/HL137-10D.jpg",
+                mainImage: "images/detail/HL137-10D.jpg",
                 isActive: false
             }
         ],
@@ -652,15 +652,15 @@ export const detail = [
         material: "100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -673,28 +673,28 @@ export const detail = [
         name_tw: "雙面穿絨毛立領外套",
         style: "J3355",
         price: "1,780",
-        mainImage: "/images/detail/J3355-97.jpg",
+        mainImage: "images/detail/J3355-97.jpg",
         thumbnails: [
             {
-                image: "/images/detail/J3355-10.jpg",
+                image: "images/detail/J3355-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/J3355-15.jpg",
+                image: "images/detail/J3355-15.jpg",
                 colorName: "深灰",
                 colorNo: "15",
                 isActive: false
             },
             {
-                image: "/images/detail/J3355-97.jpg",
+                image: "images/detail/J3355-97.jpg",
                 colorName: "深藍",
                 colorNo: "97",
                 isActive: true
             },
             {
-                image: "/images/detail/J3355-97-R.jpg",
+                image: "images/detail/J3355-97-R.jpg",
                 colorName: "內面",
                 colorNo: "Rev",
                 isActive: false
@@ -702,31 +702,31 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/J3355-10(1).jpg",
+                image: "images/detail/color/J3355-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/J3355-10.jpg",
+                mainImage: "images/detail/J3355-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/J3355-15(1).jpg",
+                image: "images/detail/color/J3355-15(1).jpg",
                 colorName: "深灰",
                 colorNo: "15",
-                mainImage: "/images/detail/J3355-15.jpg",
+                mainImage: "images/detail/J3355-15.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/J3355-97(1).jpg",
+                image: "images/detail/color/J3355-97(1).jpg",
                 colorName: "深藍",
                 colorNo: "97",
-                mainImage: "/images/detail/J3355-97.jpg",
+                mainImage: "images/detail/J3355-97.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/photo-05.jpg",
+                image: "images/detail/color/photo-05.jpg",
                 colorName: "內面",
                 colorNo: "Rev",
-                mainImage: "/images/detail/J3355-97-R.jpg",
+                mainImage: "images/detail/J3355-97-R.jpg",
                 isActive: false
             }
         ],
@@ -741,11 +741,11 @@ export const detail = [
         material: "100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -758,16 +758,16 @@ export const detail = [
         name_tw: "彈性保暖圓領上衣",
         style: "A3301",
         price: "1,380",
-        mainImage: "/images/detail/A3301-10.jpg",
+        mainImage: "images/detail/A3301-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/A3301-10.jpg",
+                image: "images/detail/A3301-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/A3301-13.jpg",
+                image: "images/detail/A3301-13.jpg",
                 colorName: "淺灰",
                 colorNo: "13",
                 isActive: false
@@ -775,17 +775,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/A3301-10.jpg",
+                image: "images/detail/color/A3301-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/A3301-10.jpg",
+                mainImage: "images/detail/A3301-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/A3301-13.jpg",
+                image: "images/detail/color/A3301-13.jpg",
                 colorName: "淺灰",
                 colorNo: "13",
-                mainImage: "/images/detail/A3301-13.jpg",
+                mainImage: "images/detail/A3301-13.jpg",
                 isActive: false
             }
         ],
@@ -799,15 +799,15 @@ export const detail = [
         material: "88% 聚酯纖維, 12% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],
@@ -820,16 +820,16 @@ export const detail = [
         name_tw: "立領鋪棉外套",
         style: "HL338",
         price: "2,760",
-        mainImage: "/images/detail/HL338-03.jpg",
+        mainImage: "images/detail/HL338-03.jpg",
         thumbnails: [
             {
-                image: "/images/detail/HL338-03.jpg",
+                image: "images/detail/HL338-03.jpg",
                 colorName: "奶茶",
                 colorNo: "03",
                 isActive: true
             },
             {
-                image: "/images/detail/HL338-43.jpg",
+                image: "images/detail/HL338-43.jpg",
                 colorName: "粉玫瑰",
                 colorNo: "43",
                 isActive: false
@@ -837,17 +837,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/HL338-03(1).jpg",
+                image: "images/detail/color/HL338-03(1).jpg",
                 colorName: "奶茶",
                 colorNo: "03",
-                mainImage: "/images/detail/HL338-03.jpg",
+                mainImage: "images/detail/HL338-03.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/HL338-43(1).jpg",
+                image: "images/detail/color/HL338-43(1).jpg",
                 colorName: "粉玫瑰",
                 colorNo: "43",
-                mainImage: "/images/detail/HL338-43.jpg",
+                mainImage: "images/detail/HL338-43.jpg",
                 isActive: false
             }
         ],
@@ -862,15 +862,15 @@ export const detail = [
         material: "面布: 100% 尼龍/ 裡布: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -883,16 +883,16 @@ export const detail = [
         name_tw: "可拆帽鋪棉外套",
         style: "H3331",
         price: "3,360",
-        mainImage: "/images/detail/H3331-16.jpg",
+        mainImage: "images/detail/H3331-16.jpg",
         thumbnails: [
             {
-                image: "/images/detail/H3331-16.jpg",
+                image: "images/detail/H3331-16.jpg",
                 colorName: "鐵灰",
                 colorNo: "16",
                 isActive: true
             },
             {
-                image: "/images/detail/H3331-10.jpg",
+                image: "images/detail/H3331-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
@@ -900,17 +900,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/H3331-16(1).jpg",
+                image: "images/detail/color/H3331-16(1).jpg",
                 colorName: "鐵灰",
                 colorNo: "16",
-                mainImage: "/images/detail/H3331-16.jpg",
+                mainImage: "images/detail/H3331-16.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/H3331-10(1).jpg",
+                image: "images/detail/color/H3331-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/H3331-10.jpg",
+                mainImage: "images/detail/H3331-10.jpg",
                 isActive: false
             }
         ],
@@ -927,19 +927,19 @@ export const detail = [
         material: "面布: 95% 聚酯纖維, 5% 彈性纖維/ 裡布: 100% 聚酯纖維/ 填充物: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -952,34 +952,34 @@ export const detail = [
         name_tw: "棉質內刷毛縮口長褲",
         style: "P5977",
         price: "1,580",
-        mainImage: "/images/detail/P5977-10.jpg",
+        mainImage: "images/detail/P5977-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/P5977-10.jpg",
+                image: "images/detail/P5977-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/P5977-17.jpg",
+                image: "images/detail/P5977-17.jpg",
                 colorName: "麻灰",
                 colorNo: "17",
                 isActive: false
             },
             {
-                image: "/images/detail/P5977-10A.jpg",
+                image: "images/detail/P5977-10A.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/P5977-10B.jpg",
+                image: "images/detail/P5977-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/P5977-10D.jpg",
+                image: "images/detail/P5977-10D.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -987,38 +987,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/P5977-10(1).jpg",
+                image: "images/detail/color/P5977-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/P5977-10.jpg",
+                mainImage: "images/detail/P5977-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/P5977-17(1).jpg",
+                image: "images/detail/color/P5977-17(1).jpg",
                 colorName: "麻灰",
                 colorNo: "17",
-                mainImage: "/images/detail/P5977-17.jpg",
+                mainImage: "images/detail/P5977-17.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5977-10A.jpg",
+                mainImage: "images/detail/P5977-10A.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5977-10B.jpg",
+                mainImage: "images/detail/P5977-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-03.jpg",
+                image: "images/detail/color/photo-03.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5977-10D.jpg",
+                mainImage: "images/detail/P5977-10D.jpg",
                 isActive: false
             }
         ],
@@ -1034,15 +1034,15 @@ export const detail = [
         material: "65% 棉 / 35% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Cotton icon.jpg",
+                image: "images/detail/Cotton icon.jpg",
                 name: "含棉材質"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1055,28 +1055,28 @@ export const detail = [
         name_tw: "彈性保暖圓領上衣",
         style: "A5902",
         price: "1,380",
-        mainImage: "/images/detail/A5902-13.jpg",
+        mainImage: "images/detail/A5902-13.jpg",
         thumbnails: [
             {
-                image: "/images/detail/A5902-13.jpg",
+                image: "images/detail/A5902-13.jpg",
                 colorName: "淺灰",
                 colorNo: "13",
                 isActive: true
             },
             {
-                image: "/images/detail/A5902-93.jpg",
+                image: "images/detail/A5902-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: false
             },
             {
-                image: "/images/detail/A5902-13B.jpg",
+                image: "images/detail/A5902-13B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/A5902-13C.jpg",
+                image: "images/detail/A5902-13C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -1084,31 +1084,31 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/A5902-13(1).jpg",
+                image: "images/detail/color/A5902-13(1).jpg",
                 colorName: "淺灰",
                 colorNo: "13",
-                mainImage: "/images/detail/A5902-13.jpg",
+                mainImage: "images/detail/A5902-13.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/A5902-93(1).jpg",
+                image: "images/detail/color/A5902-93(1).jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/A5902-93.jpg",
+                mainImage: "images/detail/A5902-93.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/A5902-13B.jpg",
+                mainImage: "images/detail/A5902-13B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/A5902-13C.jpg",
+                mainImage: "images/detail/A5902-13C.jpg",
                 isActive: false
             }
         ],
@@ -1122,19 +1122,19 @@ export const detail = [
         material: "91% 聚酯纖維, 9% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1147,28 +1147,28 @@ export const detail = [
         name_tw: "四面彈剪接長褲(薄款)",
         style: "P5970",
         price: "1,580",
-        mainImage: "/images/detail/P5970-10.jpg",
+        mainImage: "images/detail/P5970-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/P5970-10.jpg",
+                image: "images/detail/P5970-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/P5970-93.jpg",
+                image: "images/detail/P5970-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: false
             },
             {
-                image: "/images/detail/P5970-10B.jpg",
+                image: "images/detail/P5970-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/P5970-10C.jpg",
+                image: "images/detail/P5970-10C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -1176,31 +1176,31 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/P5970-10(1).jpg",
+                image: "images/detail/color/P5970-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/P5970-10.jpg",
+                mainImage: "images/detail/P5970-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/P5970-93(1).jpg",
+                image: "images/detail/color/P5970-93(1).jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/P5970-93.jpg",
+                mainImage: "images/detail/P5970-93.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5970-10B.jpg",
+                mainImage: "images/detail/P5970-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5970-10C.jpg",
+                mainImage: "images/detail/P5970-10C.jpg",
                 isActive: false
             }
         ],
@@ -1215,15 +1215,15 @@ export const detail = [
         material: "90% 聚酯纖維 / 10% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],
@@ -1236,22 +1236,22 @@ export const detail = [
         name_tw: "四面彈剪接長褲(薄款)",
         style: "PL591",
         price: "1,580",
-        mainImage: "/images/detail/PL591-10.jpg",
+        mainImage: "images/detail/PL591-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/PL591-10.jpg",
+                image: "images/detail/PL591-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/P5970-10B.jpg",
+                image: "images/detail/P5970-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/P5970-10C.jpg",
+                image: "images/detail/P5970-10C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -1259,24 +1259,24 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/P5970-10.jpg",
+                image: "images/detail/color/P5970-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/PL591-10.jpg",
+                mainImage: "images/detail/PL591-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5970-10B.jpg",
+                mainImage: "images/detail/P5970-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/P5970-10C.jpg",
+                mainImage: "images/detail/P5970-10C.jpg",
                 isActive: false
             }
         ],
@@ -1299,34 +1299,34 @@ export const detail = [
         name_tw: "彈性保暖圓領上衣",
         style: "AL506",
         price: "1,380",
-        mainImage: "/images/detail/AL506-43.jpg",
+        mainImage: "images/detail/AL506-43.jpg",
         thumbnails: [
             {
-                image: "/images/detail/AL506-10.jpg",
+                image: "images/detail/AL506-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/AL506-43.jpg",
+                image: "images/detail/AL506-43.jpg",
                 colorName: "深粉",
                 colorNo: "43",
                 isActive: true
             },
             {
-                image: "/images/detail/AL506-73.jpg",
+                image: "images/detail/AL506-73.jpg",
                 colorName: "粉紫",
                 colorNo: "73",
                 isActive: false
             },
             {
-                image: "/images/detail/AL506-43B.jpg",
+                image: "images/detail/AL506-43B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/AL506-43C.jpg",
+                image: "images/detail/AL506-43C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -1334,38 +1334,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/AL506-10(1).jpg",
+                image: "images/detail/color/AL506-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/AL506-10.jpg",
+                mainImage: "images/detail/AL506-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/AL506-43(1).jpg",
+                image: "images/detail/color/AL506-43(1).jpg",
                 colorName: "深粉",
                 colorNo: "43",
-                mainImage: "/images/detail/AL506-43.jpg",
+                mainImage: "images/detail/AL506-43.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/AL506-73(1).jpg",
+                image: "images/detail/color/AL506-73(1).jpg",
                 colorName: "粉紫",
                 colorNo: "73",
-                mainImage: "/images/detail/AL506-73.jpg",
+                mainImage: "images/detail/AL506-73.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/AL506-43B.jpg",
+                mainImage: "images/detail/AL506-43B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/AL506-43C.jpg",
+                mainImage: "images/detail/AL506-43C.jpg",
                 isActive: false
             }
         ],
@@ -1387,34 +1387,34 @@ export const detail = [
         name_tw: "彈性保暖圓領上衣",
         style: "A5901",
         price: "1,380",
-        mainImage: "/images/detail/A5901-10.jpg",
+        mainImage: "images/detail/A5901-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/A5901-03.jpg",
+                image: "images/detail/A5901-03.jpg",
                 colorName: "卡其",
                 colorNo: "03",
                 isActive: false
             },
             {
-                image: "/images/detail/A5901-10.jpg",
+                image: "images/detail/A5901-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/A5901-93.jpg",
+                image: "images/detail/A5901-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: false
             },
             {
-                image: "/images/detail/A5901-10B.jpg",
+                image: "images/detail/A5901-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/A5901-10C.jpg",
+                image: "images/detail/A5901-10C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -1422,38 +1422,38 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/A5901-03(1).jpg",
+                image: "images/detail/color/A5901-03(1).jpg",
                 colorName: "卡其",
                 colorNo: "03",
-                mainImage: "/images/detail/A5901-03.jpg",
+                mainImage: "images/detail/A5901-03.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/A5901-10(1).jpg",
+                image: "images/detail/color/A5901-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/A5901-10.jpg",
+                mainImage: "images/detail/A5901-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/A5901-93(1).jpg",
+                image: "images/detail/color/A5901-93(1).jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/A5901-93.jpg",
+                mainImage: "images/detail/A5901-93.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/A5901-10B.jpg",
+                mainImage: "images/detail/A5901-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/A5901-10C.jpg",
+                mainImage: "images/detail/A5901-10C.jpg",
                 isActive: false
             }
         ],
@@ -1467,19 +1467,19 @@ export const detail = [
         material: "91% 聚酯纖維, 9% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1492,16 +1492,16 @@ export const detail = [
         name_tw: "彈性圓領長袖上衣",
         style: "F3311",
         price: "1,380",
-        mainImage: "/images/detail/F3311-18.jpg",
+        mainImage: "images/detail/F3311-18.jpg",
         thumbnails: [
             {
-                image: "/images/detail/F3311-93.jpg",
+                image: "images/detail/F3311-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: false
             },
             {
-                image: "/images/detail/F3311-18.jpg",
+                image: "images/detail/F3311-18.jpg",
                 colorName: "深灰",
                 colorNo: "18",
                 isActive: true
@@ -1509,17 +1509,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/F3311-93.jpg",
+                image: "images/detail/color/F3311-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/F3311-93.jpg",
+                mainImage: "images/detail/F3311-93.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/F3311-18.jpg",
+                image: "images/detail/color/F3311-18.jpg",
                 colorName: "深灰",
                 colorNo: "18",
-                mainImage: "/images/detail/F3311-18.jpg",
+                mainImage: "images/detail/F3311-18.jpg",
                 isActive: true
             }
         ],
@@ -1542,10 +1542,10 @@ export const detail = [
         name_tw: "彈性防風長褲(磨毛裏)",
         style: "PL392",
         price: "1,780",
-        mainImage: "/images/detail/PL392-10.jpg",
+        mainImage: "images/detail/PL392-10.jpg",
         thumbnails: [
             {
-                image: "/images/detail/PL392-10.jpg",
+                image: "images/detail/PL392-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
@@ -1553,10 +1553,10 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/P3372-10.jpg",
+                image: "images/detail/color/P3372-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/PL392-10.jpg",
+                mainImage: "images/detail/PL392-10.jpg",
                 isActive: true
             }
         ],
@@ -1572,19 +1572,19 @@ export const detail = [
         material: "面料: 95% 聚酯纖維, 5% 聚酯纖維/ 裡布: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1597,22 +1597,22 @@ export const detail = [
         name_tw: "雙面穿立領鋪棉背心",
         style: "H3335",
         price: "1,780",
-        mainImage: "/images/detail/H3335-15.jpg",
+        mainImage: "images/detail/H3335-15.jpg",
         thumbnails: [
             {
-                image: "/images/detail/H3335-60.jpg",
+                image: "images/detail/H3335-60.jpg",
                 colorName: "黑/軍綠",
                 colorNo: "60",
                 isActive: false
             },
             {
-                image: "/images/detail/H3335-15.jpg",
+                image: "images/detail/H3335-15.jpg",
                 colorName: "黑/中灰",
                 colorNo: "15",
                 isActive: true
             },
             {
-                image: "/images/detail/H3335-15-R.jpg",
+                image: "images/detail/H3335-15-R.jpg",
                 colorName: "內面",
                 colorNo: "Rev",
                 isActive: false
@@ -1620,24 +1620,24 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/H3335-60(1).jpg",
+                image: "images/detail/color/H3335-60(1).jpg",
                 colorName: "黑/軍綠",
                 colorNo: "60",
-                mainImage: "/images/detail/H3335-60.jpg",
+                mainImage: "images/detail/H3335-60.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/H3335-15(1).jpg",
+                image: "images/detail/color/H3335-15(1).jpg",
                 colorName: "黑/中灰",
                 colorNo: "15",
-                mainImage: "/images/detail/H3335-15.jpg",
+                mainImage: "images/detail/H3335-15.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/photo-05.jpg",
+                image: "images/detail/color/photo-05.jpg",
                 colorName: "內面",
                 colorNo: "Rev",
-                mainImage: "/images/detail/H3335-15-R.jpg",
+                mainImage: "images/detail/H3335-15-R.jpg",
                 isActive: false
             }
         ],
@@ -1652,15 +1652,15 @@ export const detail = [
         material: "面布: 100% 尼龍/ 裡布: 100% 聚酯纖維/ 填充物: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1673,16 +1673,16 @@ export const detail = [
         name_tw: "可拆帽防風外套(磨毛裏)",
         style: "J3352",
         price: "2,360",
-        mainImage: "/images/detail/J3352-60.jpg",
+        mainImage: "images/detail/J3352-60.jpg",
         thumbnails: [
             {
-                image: "/images/detail/J3352-60.jpg",
+                image: "images/detail/J3352-60.jpg",
                 colorName: "黑/軍綠",
                 colorNo: "60",
                 isActive: true
             },
             {
-                image: "/images/detail/J3352-15.jpg",
+                image: "images/detail/J3352-15.jpg",
                 colorName: "黑/中灰",
                 colorNo: "15",
                 isActive: false
@@ -1690,17 +1690,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/J3352-60(1).jpg",
+                image: "images/detail/color/J3352-60(1).jpg",
                 colorName: "黑/軍綠",
                 colorNo: "60",
-                mainImage: "/images/detail/J3352-60.jpg",
+                mainImage: "images/detail/J3352-60.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/J3352-15(1).jpg",
+                image: "images/detail/color/J3352-15(1).jpg",
                 colorName: "黑/中灰",
                 colorNo: "15",
-                mainImage: "/images/detail/J3352-15.jpg",
+                mainImage: "images/detail/J3352-15.jpg",
                 isActive: false
             }
         ],
@@ -1716,15 +1716,15 @@ export const detail = [
         material: "面料: 100% 尼龍/ 裡料: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1737,16 +1737,16 @@ export const detail = [
         name_tw: "連帽四面彈外套(薄款)",
         style: "J3350",
         price: "1,780",
-        mainImage: "/images/detail/J3350-15.jpg",
+        mainImage: "images/detail/J3350-15.jpg",
         thumbnails: [
             {
-                image: "/images/detail/J3350-93.jpg",
+                image: "images/detail/J3350-93.jpg",
                 colorName: "黑/丈青",
                 colorNo: "93",
                 isActive: false
             },
             {
-                image: "/images/detail/J3350-15.jpg",
+                image: "images/detail/J3350-15.jpg",
                 colorName: "黑/深灰",
                 colorNo: "15",
                 isActive: true
@@ -1754,17 +1754,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/J3350-93(1).jpg",
+                image: "images/detail/color/J3350-93(1).jpg",
                 colorName: "黑/丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/J3350-93.jpg",
+                mainImage: "images/detail/J3350-93.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/J3350-15(1).jpg",
+                image: "images/detail/color/J3350-15(1).jpg",
                 colorName: "黑/深灰",
                 colorNo: "15",
-                mainImage: "/images/detail/J3350-15.jpg",
+                mainImage: "images/detail/J3350-15.jpg",
                 isActive: true
             }
         ],
@@ -1779,15 +1779,15 @@ export const detail = [
         material: "100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],
@@ -1800,16 +1800,16 @@ export const detail = [
         name_tw: "連帽防風外套(網裏)",
         style: "J3351",
         price: "1,960",
-        mainImage: "/images/detail/J3351-15.jpg",
+        mainImage: "images/detail/J3351-15.jpg",
         thumbnails: [
             {
-                image: "/images/detail/J3351-10.jpg",
+                image: "images/detail/J3351-10.jpg",
                 colorName: "黑/中灰",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/J3351-15.jpg",
+                image: "images/detail/J3351-15.jpg",
                 colorName: "中灰/黑",
                 colorNo: "15",
                 isActive: true
@@ -1817,17 +1817,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/J3351-10(1).jpg",
+                image: "images/detail/color/J3351-10(1).jpg",
                 colorName: "黑/中灰",
                 colorNo: "10",
-                mainImage: "/images/detail/J3351-10.jpg",
+                mainImage: "images/detail/J3351-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/J3351-15(1).jpg",
+                image: "images/detail/color/J3351-15(1).jpg",
                 colorName: "中灰/黑",
                 colorNo: "15",
-                mainImage: "/images/detail/J3351-15.jpg",
+                mainImage: "images/detail/J3351-15.jpg",
                 isActive: true
             }
         ],
@@ -1843,15 +1843,15 @@ export const detail = [
         material: "面料: 100% 尼龍/ 裡料: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "抗小雨"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],
@@ -1864,16 +1864,16 @@ export const detail = [
         name_tw: "四面彈束口長褲(薄款)",
         style: "PL390",
         price: "1,580",
-        mainImage: "/images/detail/PL390-93.jpg",
+        mainImage: "images/detail/PL390-93.jpg",
         thumbnails: [
             {
-                image: "/images/detail/PL390-10.jpg",
+                image: "images/detail/PL390-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/PL390-93.jpg",
+                image: "images/detail/PL390-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: true
@@ -1881,17 +1881,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/P3370-10.jpg",
+                image: "images/detail/color/P3370-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/PL390-10.jpg",
+                mainImage: "images/detail/PL390-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/P3370-93.jpg",
+                image: "images/detail/color/P3370-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/PL390-93.jpg",
+                mainImage: "images/detail/PL390-93.jpg",
                 isActive: true
             }
         ],
@@ -1906,15 +1906,15 @@ export const detail = [
         material: "100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],
@@ -1927,16 +1927,16 @@ export const detail = [
         name_tw: "可拆帽衝鋒外套(搖粒絨裏)",
         style: "J3353",
         price: "2,760",
-        mainImage: "/images/detail/J3353-60.jpg",
+        mainImage: "images/detail/J3353-60.jpg",
         thumbnails: [
             {
-                image: "/images/detail/J3353-10.jpg",
+                image: "images/detail/J3353-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/J3353-60.jpg",
+                image: "images/detail/J3353-60.jpg",
                 colorName: "黑/軍綠",
                 colorNo: "60",
                 isActive: true
@@ -1944,17 +1944,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/J3353-10(1).jpg",
+                image: "images/detail/color/J3353-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/J3353-10.jpg",
+                mainImage: "images/detail/J3353-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/J3353-60(1).jpg",
+                image: "images/detail/color/J3353-60(1).jpg",
                 colorName: "黑/軍綠",
                 colorNo: "60",
-                mainImage: "/images/detail/J3353-60.jpg",
+                mainImage: "images/detail/J3353-60.jpg",
                 isActive: true
             }
         ],
@@ -1968,15 +1968,15 @@ export const detail = [
         material: "面料: 100% 尼龍/ 裡料: 100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Windproof icon 12.jpg",
+                image: "images/detail/Windproof icon 12.jpg",
                 name: "防風"
             },
             {
-                image: "/images/detail/Waterproof_icon14.jpg",
+                image: "images/detail/Waterproof_icon14.jpg",
                 name: "防潑水"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -1989,16 +1989,16 @@ export const detail = [
         name_tw: "彈性保暖圓領上衣",
         style: "A4701",
         price: "1,380",
-        mainImage: "/images/detail/A4701-93.jpg",
+        mainImage: "images/detail/A4701-93.jpg",
         thumbnails: [
             {
-                image: "/images/detail/A4701-19.jpg",
+                image: "images/detail/A4701-19.jpg",
                 colorName: "深灰",
                 colorNo: "19",
                 isActive: false
             },
             {
-                image: "/images/detail/A4701-93.jpg",
+                image: "images/detail/A4701-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
                 isActive: true
@@ -2006,17 +2006,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/A4701-19.jpg",
+                image: "images/detail/color/A4701-19.jpg",
                 colorName: "深灰",
                 colorNo: "19",
-                mainImage: "/images/detail/A4701-19.jpg",
+                mainImage: "images/detail/A4701-19.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/A4701-93.jpg",
+                image: "images/detail/color/A4701-93.jpg",
                 colorName: "丈青",
                 colorNo: "93",
-                mainImage: "/images/detail/A4701-93.jpg",
+                mainImage: "images/detail/A4701-93.jpg",
                 isActive: true
             }
         ],
@@ -2030,19 +2030,19 @@ export const detail = [
         material: "45% 陽離子, 45% 聚酯纖維, 10% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -2055,16 +2055,16 @@ export const detail = [
         name_tw: "雙面穿絨毛立領外套",
         style: "JL365",
         price: "1,780",
-        mainImage: "/images/detail/JL365-43.jpg",
+        mainImage: "images/detail/JL365-43.jpg",
         thumbnails: [
             {
-                image: "/images/detail/JL365-10.jpg",
+                image: "images/detail/JL365-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
             },
             {
-                image: "/images/detail/JL365-43.jpg",
+                image: "images/detail/JL365-43.jpg",
                 colorName: "深粉",
                 colorNo: "43",
                 isActive: true
@@ -2072,17 +2072,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/J3355-10.jpg",
+                image: "images/detail/color/J3355-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/JL365-10.jpg",
+                mainImage: "images/detail/JL365-10.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/JL365-43(1).jpg",
+                image: "images/detail/color/JL365-43(1).jpg",
                 colorName: "深粉",
                 colorNo: "43",
-                mainImage: "/images/detail/JL365-43.jpg",
+                mainImage: "images/detail/JL365-43.jpg",
                 isActive: true
             }
         ],
@@ -2097,11 +2097,11 @@ export const detail = [
         material: "100% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -2114,16 +2114,16 @@ export const detail = [
         name_tw: "棉質內刷毛束口長褲",
         style: "P3377",
         price: "1,580",
-        mainImage: "/images/detail/P3377-17.jpg",
+        mainImage: "images/detail/P3377-17.jpg",
         thumbnails: [
             {
-                image: "/images/detail/P3377-17.jpg",
+                image: "images/detail/P3377-17.jpg",
                 colorName: "麻灰",
                 colorNo: "17",
                 isActive: true
             },
             {
-                image: "/images/detail/P3377-10.jpg",
+                image: "images/detail/P3377-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: false
@@ -2131,17 +2131,17 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/P3377-17.jpg",
+                image: "images/detail/color/P3377-17.jpg",
                 colorName: "麻灰",
                 colorNo: "17",
-                mainImage: "/images/detail/P3377-17.jpg",
+                mainImage: "images/detail/P3377-17.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/P3377-10.jpg",
+                image: "images/detail/color/P3377-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/P3377-10.jpg",
+                mainImage: "images/detail/P3377-10.jpg",
                 isActive: false
             }
         ],
@@ -2156,15 +2156,15 @@ export const detail = [
         material: "65% 棉 / 35% 聚酯纖維",
         featureIcons: [
             {
-                image: "/images/detail/Cotton icon.jpg",
+                image: "images/detail/Cotton icon.jpg",
                 name: "含棉材質"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             },
             {
-                image: "/images/detail/Hot icon.jpg",
+                image: "images/detail/Hot icon.jpg",
                 name: "蓄熱保暖"
             }
         ],
@@ -2177,10 +2177,10 @@ export const detail = [
         name_tw: "彈性圓領上衣(長袖)",
         style: "D3308",
         price: "1,380",
-        mainImage: "/images/detail/D3308-98.jpg",
+        mainImage: "images/detail/D3308-98.jpg",
         thumbnails: [
             {
-                image: "/images/detail/D3308-98.jpg",
+                image: "images/detail/D3308-98.jpg",
                 colorName: "藍灰",
                 colorNo: "98",
                 isActive: true
@@ -2188,10 +2188,10 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/D3251-98.jpg",
+                image: "images/detail/color/D3251-98.jpg",
                 colorName: "藍灰",
                 colorNo: "98",
-                mainImage: "/images/detail/D3308-98.jpg",
+                mainImage: "images/detail/D3308-98.jpg",
                 isActive: true
             }
         ],
@@ -2206,11 +2206,11 @@ export const detail = [
         material: "68% 尼龍, 22% 聚酯纖維, 10% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],
@@ -2223,22 +2223,22 @@ export const detail = [
         name_tw: "男性機能內搭褲",
         style: "A5905",
         price: "1,380",
-        mainImage: "/images/detail/A5905-10C.jpg",
+        mainImage: "images/detail/A5905-10C.jpg",
         thumbnails: [
             {
-                image: "/images/detail/A5905-10.jpg",
+                image: "images/detail/A5905-10.jpg",
                 colorName: "黑色",
                 colorNo: "10",
                 isActive: true
             },
             {
-                image: "/images/detail/A5905-10B.jpg",
+                image: "images/detail/A5905-10B.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
             },
             {
-                image: "/images/detail/A5905-10C.jpg",
+                image: "images/detail/A5905-10C.jpg",
                 colorName: "特寫",
                 colorNo: "close",
                 isActive: false
@@ -2246,24 +2246,24 @@ export const detail = [
         ],
         colors: [
             {
-                image: "/images/detail/color/A5905-10(1).jpg",
+                image: "images/detail/color/A5905-10(1).jpg",
                 colorName: "黑色",
                 colorNo: "10",
-                mainImage: "/images/detail/A5905-10.jpg",
+                mainImage: "images/detail/A5905-10.jpg",
                 isActive: true
             },
             {
-                image: "/images/detail/color/photo-02.jpg",
+                image: "images/detail/color/photo-02.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/A5905-10B.jpg",
+                mainImage: "images/detail/A5905-10B.jpg",
                 isActive: false
             },
             {
-                image: "/images/detail/color/photo-01.jpg",
+                image: "images/detail/color/photo-01.jpg",
                 colorName: "特寫",
                 colorNo: "close",
-                mainImage: "/images/detail/A5905-10C.jpg",
+                mainImage: "images/detail/A5905-10C.jpg",
                 isActive: false
             }
         ],
@@ -2278,15 +2278,15 @@ export const detail = [
         material: "80% 聚酯纖維 / 20% 彈性纖維",
         featureIcons: [
             {
-                image: "/images/detail/Stretch icon .jpg",
+                image: "images/detail/Stretch icon .jpg",
                 name: "彈性布料"
             },
             {
-                image: "/images/detail/Wicking icon 12.jpg",
+                image: "images/detail/Wicking icon 12.jpg",
                 name: "吸濕排汗"
             },
             {
-                image: "/images/detail/Breathable icon 12.jpg",
+                image: "images/detail/Breathable icon 12.jpg",
                 name: "具透氣性"
             }
         ],

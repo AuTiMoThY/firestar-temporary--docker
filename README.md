@@ -175,6 +175,10 @@ docker compose ps
 
 ### 執行 Generate
 
+```
+docker compose run --rm frontend pnpm run generate
+```
+
 #### 方法 1：使用 npm/pnpm 腳本
 
 ```bash

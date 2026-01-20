@@ -3,33 +3,14 @@ import { banner } from "~/constant/banner";
 import { new_pdt } from "~/constant/home-new_pdt";
 import { top_pdt } from "~/constant/home-top_pdt";
 
-// 獲取 baseURL - 使用 useRequestURL() 或從 window.location 獲取
-let baseURL = "/";
-try {
-    const url = useRequestURL();
-    const pathname = url.pathname;
-    // 從路徑中提取 baseURL（例如：/firestar-202601/xxx -> /firestar-202601/）
-    if (pathname !== "/" && pathname.startsWith("/")) {
-        const segments = pathname.split("/").filter(Boolean);
-        if (segments.length > 0) {
-            baseURL = `/${segments[0]}/`;
-        }
-    }
-} catch (e) {
-    // 如果 useRequestURL() 不可用（例如在 generate 時），嘗試從 window.location 獲取
-    if (typeof window !== "undefined") {
-        const pathname = window.location.pathname;
-        if (pathname !== "/" && pathname.startsWith("/")) {
-            const segments = pathname.split("/").filter(Boolean);
-            if (segments.length > 0) {
-                baseURL = `/${segments[0]}/`;
-            }
-        }
-    }
-}
+const config = useRuntimeConfig();
+const basePath = config.public.basePath;
+
+console.log('basePath', basePath);
+
 
 const bannerList = ref(banner.map(item => ({
-    ...item
+    ...item,
 })));
 
 const new_pdtList = ref(new_pdt.map(item => ({
@@ -45,15 +26,11 @@ const top_pdtList = ref(top_pdt.map(item => ({
         <!-- Banner Section -->
         <section class="banner">
             <div class="banner_list">
-                <div
-                    v-for="item in bannerList"
-                    :key="item.id"
-                    class="banner_item"
-                    :data-id="item.id">
+                <div v-for="item in bannerList" :key="item.id" class="banner_item" :data-id="item.id">
                     <NuxtLink :to="item.link">
                         <div class="pic">
-                            <img class="d-none d-sm-block" :src="item.image" />
-                            <img class="d-sm-none" :src="item.image_mobile" />
+                            <img class="d-none d-sm-block" :src="`${basePath}${item.image}`" />
+                            <img class="d-sm-none" :src="`${basePath}${item.image_mobile}`" />
                         </div>
                     </NuxtLink>
                 </div>
@@ -64,13 +41,10 @@ const top_pdtList = ref(top_pdt.map(item => ({
         <section class="main_section new_pdt">
             <div class="inner">
                 <ul class="cf lis-n row no-gutters">
-                    <li
-                        v-for="item in new_pdtList"
-                        :key="item.id"
-                        class="new_pdt-item col-sm-4">
+                    <li v-for="item in new_pdtList" :key="item.id" class="new_pdt-item col-sm-4">
                         <NuxtLink class="inner" :to="item.link">
                             <div class="pic">
-                                <img :src="item.image" :alt="item.alt" />
+                                <img :src="`${basePath}${item.image}`" :alt="item.alt" />
                             </div>
                             <span class="inner-more">
                                 <div class="txt">了解更多</div>
@@ -88,14 +62,14 @@ const top_pdtList = ref(top_pdt.map(item => ({
                     <li class="pdt_category-item col-sm-6">
                         <NuxtLink class="inner" to="/new_products?type=1">
                             <div class="pic">
-                                <img src="/images/MENS01.jpg" alt="MEN'S" />
+                                <img :src="`${basePath}images/MENS01.jpg`" alt="MEN'S" />
                             </div>
                         </NuxtLink>
                     </li>
                     <li class="pdt_category-item col-sm-6">
                         <NuxtLink class="inner" to="/new_products?type=2">
                             <div class="pic">
-                                <img src="/images/WOMENS01.jpg" alt="WOMEN'S" />
+                                <img :src="`${basePath}images/WOMENS01.jpg`" alt="WOMEN'S" />
                             </div>
                         </NuxtLink>
                     </li>
@@ -108,13 +82,10 @@ const top_pdtList = ref(top_pdt.map(item => ({
             <div class="inner">
                 <h2 class="top_pdt-title">精選商品</h2>
                 <ul class="top_pdt-list">
-                    <li
-                        v-for="item in top_pdtList"
-                        :key="item.id"
-                        class="top_pdt-item">
+                    <li v-for="item in top_pdtList" :key="item.id" class="top_pdt-item">
                         <NuxtLink class="inner" :to="item.link">
                             <div class="pic">
-                                <img :src="item.image" :alt="item.alt" />
+                                <img :src="`${basePath}${item.image}`" :alt="item.alt" />
                             </div>
                         </NuxtLink>
                     </li>
@@ -131,6 +102,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
 
 <style scoped>
 @reference "tailwindcss";
+
 /* Content Wrapper */
 .content_wrapper {
     @apply w-full;
@@ -189,15 +161,15 @@ const top_pdtList = ref(top_pdt.map(item => ({
     @apply float-left;
 }
 
-.new_pdt-item > .inner {
+.new_pdt-item>.inner {
     @apply block relative border-4 border-white overflow-hidden;
 }
 
-.new_pdt-item > .inner .inner-more {
+.new_pdt-item>.inner .inner-more {
     @apply z-[1] flex justify-center items-center absolute inset-0 w-full h-full bg-black/60 text-center items-center opacity-0 transition-opacity duration-300;
 }
 
-.new_pdt-item > .inner .txt {
+.new_pdt-item>.inner .txt {
     @apply table text-white py-[0.6rem] px-4 border border-white bg-white/30;
 }
 
@@ -220,7 +192,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
 }
 
 /* Product Category */
-.pdt_category-item > .inner {
+.pdt_category-item>.inner {
     @apply block overflow-hidden;
 }
 
@@ -251,7 +223,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
     @apply w-1/4 px-4;
 }
 
-.top_pdt-item > .inner {
+.top_pdt-item>.inner {
     @apply block;
 }
 
@@ -282,7 +254,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
     @apply mx-0;
 }
 
-.no-gutters > * {
+.no-gutters>* {
     @apply px-0;
 }
 

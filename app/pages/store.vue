@@ -5,6 +5,9 @@ import { store_south } from "~/constant/store_south";
 import { store_east } from "~/constant/store_east";
 import { store_islands } from "~/constant/store_islands";
 
+const config = useRuntimeConfig();
+const basePath = config.public.basePath;
+
 // 設定頁面標題
 useHead({
     title: "經銷據點 | Firestar 方元開發有限公司"
@@ -84,11 +87,11 @@ const areaInfo = computed(() => {
             <div class="pic">
                 <img
                     class="d-none d-sm-block"
-                    src="/images/banner-about.jpg"
+                    :src="`${basePath}images/banner-about.jpg`"
                     alt="經銷據點" />
                 <img
                     class="d-sm-none"
-                    src="/images/banner-about-m.jpg"
+                    :src="`${basePath}images/banner-about-m.jpg`"
                     alt="經銷據點" />
             </div>
         </section>

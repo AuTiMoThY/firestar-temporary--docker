@@ -3,6 +3,9 @@ import { new_products as new_products_type1 } from "~/constant/new_products-type
 import { new_products as new_products_type2 } from "~/constant/new_products-type2";
 import { new_products as new_products_type3 } from "~/constant/new_products-type3";
 
+const config = useRuntimeConfig();
+const basePath = config.public.basePath;
+
 // 獲取路由和查詢參數
 const route = useRoute();
 const type = computed(() => {
@@ -28,9 +31,9 @@ const pageTitle = computed(() => {
 });
 
 const bannerImage = computed(() => {
-    if (type.value === "2") return "/images/women_top.jpg";
-    if (type.value === "3") return "/images/men_top.jpg"; // 高爾夫系列使用男性系列的 banner，或可自行設定
-    return "/images/men_top.jpg";
+    if (type.value === "2") return "images/women_top.jpg";
+    if (type.value === "3") return "images/men_top.jpg"; // 高爾夫系列使用男性系列的 banner，或可自行設定
+    return "images/men_top.jpg";
 });
 
 const bannerAlt = computed(() => {
@@ -40,7 +43,7 @@ const bannerAlt = computed(() => {
 });
 
 const pdtList = computed(() => {
-    return new_products.value.map(item => ({
+    return new_products.value.map((item: any) => ({
         ...item
     }));
 });
@@ -52,7 +55,7 @@ const pdtList = computed(() => {
             <!-- Banner Section -->
             <div class="pdt_banner d-none d-sm-block">
                 <div class="pic">
-                    <img :src="bannerImage" :alt="bannerAlt" />
+                    <img :src="`${basePath}${bannerImage}`" :alt="bannerAlt" />
                 </div>
             </div>
 
@@ -68,7 +71,7 @@ const pdtList = computed(() => {
                             class="pdt_content-item w-1/2 sm:w-1/3">
                             <NuxtLink class="inner" :to="item.link">
                                 <div class="pdt_content-pic pic">
-                                    <img :src="item.image" :alt="item.alt" />
+                                    <img :src="`${basePath}${item.image}`" :alt="item.alt" />
                                 </div>
                                 <div class="pdt_content-info">
                                     <div class="name">

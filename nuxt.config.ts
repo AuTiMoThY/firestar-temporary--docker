@@ -6,7 +6,8 @@ const processEnv = (
 ).process?.env;
 const isProduction = processEnv?.NODE_ENV === "production";
 
-
+const version = "20260120";
+const basePath = isProduction ? "/firestar-202601/" : "/"
 
 console.log("======================", `http://localhost:${processEnv?.FRONTEND_PORT}`);
 
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
 
     // 設定基礎路徑：開發時為 /，生產環境為 /admin/
     app: {
-        baseURL: isProduction ? "/firestar-202601/" : "/"
+        baseURL: basePath
     },
 
     devtools: {
@@ -69,5 +70,10 @@ export default defineNuxtConfig({
             }
         }
     },
-
+    runtimeConfig: {
+        public: {
+            version,
+            basePath,
+        }
+    }
 });
