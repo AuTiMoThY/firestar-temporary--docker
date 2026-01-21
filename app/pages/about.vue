@@ -98,7 +98,6 @@ const basePath = config.public.basePath;
 
 .banner .pic {
     @apply relative w-full;
-    padding-bottom: 42.66667%;
     @apply bg-cover;
 }
 
