@@ -1,5 +1,70 @@
 export const detail = [
     {
+        id: 390,
+        name_en: "Women's Outdoor Golf Pants",
+        name_tw: "高球戶外休閒長褲",
+        style: "PL098",
+        price: "1,780",
+        mainImage: "images/detail/PL098-10.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/PL098-01.jpg",
+                colorName: "灰咖",
+                colorNo: "01",
+                isActive: false
+            },
+            {
+                image: "images/detail/PL098-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                isActive: true
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/PL098-01.jpg",
+                colorName: "灰咖",
+                colorNo: "01",
+                mainImage: "images/detail/PL098-01.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/PL098-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                mainImage: "images/detail/PL098-10.jpg",
+                isActive: true
+            }
+        ],
+        size: "M / L / XL ( 亞規剪裁,直筒修身 )",
+        features: [
+            "四面彈性布料",
+            "雙面平布織法",
+            "兩側彈性鬆緊帶",
+            "吸濕排汗功能",
+            "輕盈透氣快乾",
+            "口袋 (前×2 後×2)",
+            "褲腳開衩設計"
+        ],
+        material: "90% 尼龍 / 10% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Wicking icon 12.jpg",
+                name: "吸濕排汗"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "彈性材質，讓你活動自如。<br>快乾布料特性，穿著乾爽舒適。<br>口袋內裏透氣網布設計。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
         id: 401,
         name_en: "Men's Polyester Puffer Vest",
         name_tw: "立領輕鋪棉背心",
@@ -399,6 +464,307 @@ export const detail = [
         material: "45 % 陽離子 / 45% 聚酯纖維 / 10% 彈性纖維",
         featureIcons: [],
         description: "彈性布料延展性極佳，使穿著更輕鬆、活動自如。<br>輕磨毛材質蓄熱保暖，觸感柔細、親膚舒適。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 439,
+        name_en: "Women's Stretch Full Zip Hoodie",
+        name_tw: "彈性防曬連帽外套",
+        style: "JL175",
+        price: "1,380",
+        mainImage: "images/detail/JL175-43.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/JL175-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                isActive: false
+            },
+            {
+                image: "images/detail/JL175-43.jpg",
+                colorName: "粉紅",
+                colorNo: "43",
+                isActive: true
+            },
+            {
+                image: "images/detail/JL175-47.jpg",
+                colorName: "深桃紅",
+                colorNo: "47",
+                isActive: false
+            },
+            {
+                image: "images/detail/JL175-43C.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/JL175-43B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/DL163-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                mainImage: "images/detail/JL175-10.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/JL175-43.jpg",
+                colorName: "粉紅",
+                colorNo: "43",
+                mainImage: "images/detail/JL175-43.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/DL163-47.jpg",
+                colorName: "深桃紅",
+                colorNo: "47",
+                mainImage: "images/detail/JL175-47.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/JL175-43C.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/JL175-43B.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL ( 亞規剪裁,標準版型 )",
+        features: [
+            "高彈力纖維布料",
+            "表面橫向透氣條紋",
+            "質地柔軟舒適",
+            "滑順冰涼觸感",
+            "拉鍊口袋 (前×2)",
+            "反光功能素材"
+        ],
+        material: "81% 尼龍 / 19% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "▪ 簡單物理防曬，減少日曬傷害。<br>▪ 彈性布料具良好延展性，活動自如。<br>▪ 柔軟滑爽觸感冰涼，有感降低溫度。<br>▪ 拉鍊處反光素材，增加夜間可視率。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 448,
+        name_en: "Men's Cargo Pocket Shorts",
+        name_tw: "戶外多功能短褲",
+        style: "C1721",
+        price: "1,380",
+        mainImage: "images/detail/C1721-10.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/C1721-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                isActive: true
+            },
+            {
+                image: "images/detail/C1721-15.jpg",
+                colorName: "深灰",
+                colorNo: "15",
+                isActive: false
+            },
+            {
+                image: "images/detail/C1721-15B.jpg",
+                colorName: "背面",
+                colorNo: "back",
+                isActive: false
+            },
+            {
+                image: "images/detail/C1721-10B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/P0671-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                mainImage: "images/detail/C1721-10.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/P0671-15.jpg",
+                colorName: "深灰",
+                colorNo: "15",
+                mainImage: "images/detail/C1721-15.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "背面",
+                colorNo: "back",
+                mainImage: "images/detail/C1721-15B.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/C1721-10B.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL / XXL ( 亞規剪裁,標準版型 )",
+        features: [
+            "四面彈性登山布",
+            "底面立體織法",
+            "兩側彈性鬆緊帶",
+            "吸濕排汗功能",
+            "輕盈透氣快乾",
+            "口袋 (前×4 )"
+        ],
+        material: "88% 尼龍 / 12% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Wicking icon 12.jpg",
+                name: "吸濕排汗"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "多口袋工作短褲款式。<br>彈性材質，讓你活動自如。<br>快乾布料特性，穿著乾爽舒適。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 456,
+        name_en: "Men's Stretch Nylon  Joggers",
+        name_tw: "彈性剪接束口長褲",
+        style: "P1781",
+        price: "1,580",
+        mainImage: "images/detail/P1781-15.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/P1781-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                isActive: false
+            },
+            {
+                image: "images/detail/P1781-15.jpg",
+                colorName: "深灰",
+                colorNo: "15",
+                isActive: true
+            },
+            {
+                image: "images/detail/P1781-93.jpg",
+                colorName: "丈青",
+                colorNo: "93",
+                isActive: false
+            },
+            {
+                image: "images/detail/P1781-15B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/P1781-15C.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/P1781-15D.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/P1781-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                mainImage: "images/detail/P1781-10.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/P1781-15.jpg",
+                colorName: "深灰",
+                colorNo: "15",
+                mainImage: "images/detail/P1781-15.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/P1781-93.jpg",
+                colorName: "丈青",
+                colorNo: "93",
+                mainImage: "images/detail/P1781-93.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/P1781-15B.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/P1781-15C.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-03.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/P1781-15D.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL ( 錐形/亞規合身 )",
+        features: [
+            "四面彈性布料",
+            "彈性褲頭內置抽繩",
+            "兩側跳色剪接",
+            "口袋 (前×2)",
+            "拉鍊口袋 (右後×1)",
+            "反光功能LOGO"
+        ],
+        material: "90% 尼龍 / 10% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Wicking icon 12.jpg",
+                name: "吸濕排汗"
+            }
+        ],
+        description: "俐落有型的束口褲。<br>採用彈性纖維，活動更自如 。<br>右後拉鍊口袋，置放物品不掉落。",
         notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
     },
     {
@@ -815,6 +1181,164 @@ export const detail = [
         notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
     },
     {
+        id: 517,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "彈性機能Polo衫(短袖)",
+        style: "D2055",
+        price: "1,380",
+        mainImage: "images/detail/D2055-18.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D2055-18.jpg",
+                colorName: "深灰",
+                colorNo: "18",
+                isActive: true
+            },
+            {
+                image: "images/detail/D2055-18B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/D2055-18C.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/D2055-18.jpg",
+                colorName: "深灰",
+                colorNo: "18",
+                mainImage: "images/detail/D2055-18.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D2055-18B.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D2055-18C.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL / XXL ( 亞規剪裁,標準版型 )",
+        features: [
+            "陽離子合紗彈力布",
+            "點狀透氣排針孔",
+            "質地柔軟舒適",
+            "滑順冰涼觸感",
+            "反光功能素材"
+        ],
+        material: "88% 尼龍 / 12% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "▪ 彈性布料具良好延展性，活動自如。<br>▪ 柔軟滑爽觸感冰涼，有感降低溫度。<br>▪ 左胸LOGO及右袖配置反光設計。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 586,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "彈性機能Polo衫(短袖)",
+        style: "D3256",
+        price: "1,580",
+        mainImage: "images/detail/D3256-18.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D3256-18.jpg",
+                colorName: "深灰",
+                colorNo: "18",
+                isActive: true
+            },
+            {
+                image: "images/detail/D3256-18B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/D3256-18C.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/D3256-18D.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/D3256-18.jpg",
+                colorName: "深灰",
+                colorNo: "18",
+                mainImage: "images/detail/D3256-18.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D3256-18B.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D3256-18C.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-03.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D3256-18D.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL / XXL ( 亞規剪裁,標準版型 )",
+        features: [
+            "高爾夫Club系列",
+            "三扣前襟襯衫領",
+            "陽離子方格排針孔",
+            "質地柔軟舒適",
+            "滑順冰涼觸感",
+            "反光功能素材"
+        ],
+        material: "32% 尼龍, 52% 聚酯纖維, 16% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "▪ 彈性布料具良好延展性，活動自如。<br>▪ 柔軟滑爽觸感冰涼，有感降低溫度。<br>▪ 前襟、右胸LOGO、袖口及後領反光設計。<br>▪ 下襬開衩剪裁，方便活動更自在。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
         id: 611,
         name_en: "Women's Polyester Puffer Jacket",
         name_tw: "立領鋪棉外套",
@@ -944,6 +1468,306 @@ export const detail = [
             }
         ],
         description: "前拉鍊內附擋風片，加強防風。<br>袖口魔鬼氈可調整鬆緊，冷風不易竄入。<br>胸前拉鍊口袋設計，防止物品掉落。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 689,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "冰感機能Polo衫(短袖) ",
+        style: "D5851",
+        price: "1,380",
+        mainImage: "images/detail/D5851-98.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D5851-12.jpg",
+                colorName: "灰綠",
+                colorNo: "12",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5851-93.jpg",
+                colorName: "丈青",
+                colorNo: "93",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5851-98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                isActive: true
+            },
+            {
+                image: "images/detail/D5851-98A.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/D5851-12(1).jpg",
+                colorName: "灰綠",
+                colorNo: "12",
+                mainImage: "images/detail/D5851-12.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5830-93.jpg",
+                colorName: "丈青",
+                colorNo: "93",
+                mainImage: "images/detail/D5851-93.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5830-98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                mainImage: "images/detail/D5851-98.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D5851-98A.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL / XXL ( 亞規剪裁,標準版型 )",
+        features: [
+            "高爾夫Club系列",
+            "三扣前襟襯衫領",
+            "彈性纖維布料",
+            "橫向3D透氣網眼",
+            "材質柔軟 觸感冰涼",
+            "反光功能素材"
+        ],
+        material: "87% 聚酯纖維, 13% 彈性纖維",
+        featureIcons: [],
+        description: "▪ 彈性布料具有良好的延展性，活動更自如。<br>▪ 材質特性能與環境溫度平衡，瞬間降溫。<br>▪ 網眼織法，有效提升透氣。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 700,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "冰感機能Polo衫(短袖) ",
+        style: "D5855",
+        price: "2,160",
+        mainImage: "images/detail/D5855_98.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D5855-13.jpg",
+                colorName: "淺灰",
+                colorNo: "13",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5855_98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                isActive: true
+            },
+            {
+                image: "images/detail/D5855_98-A.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/D5855-13(1).jpg",
+                colorName: "淺灰",
+                colorNo: "13",
+                mainImage: "images/detail/D5855-13.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5855-98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                mainImage: "images/detail/D5855_98.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D5855_98-A.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL ( 亞規剪裁,標準版型 )",
+        features: [
+            "高爾夫Club系列",
+            "三扣前襟襯衫領",
+            "陽離子彈性布料",
+            "格柵狀高透網眼",
+            "材質柔軟 觸感冰涼",
+            "反光功能素材"
+        ],
+        material: "57.1% 尼龍, 26.7% 聚酯纖維, 16.2% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "▪ 彈性布料具有良好的延展性，活動更自如。<br>▪ 材質特性能與環境溫度平衡，瞬間降溫。<br>▪ 網眼織法，有效提升透氣。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 689,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "冰感機能Polo衫(短袖) ",
+        style: "D5851",
+        price: "1,380",
+        mainImage: "images/detail/D5851-98.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D5851-12.jpg",
+                colorName: "灰綠",
+                colorNo: "12",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5851-93.jpg",
+                colorName: "丈青",
+                colorNo: "93",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5851-98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                isActive: true
+            },
+            {
+                image: "images/detail/D5851-98A.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/D5851-12(1).jpg",
+                colorName: "灰綠",
+                colorNo: "12",
+                mainImage: "images/detail/D5851-12.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/D5830-93.jpg",
+                colorName: "丈青",
+                colorNo: "93",
+                mainImage: "images/detail/D5851-93.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/D5830-98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                mainImage: "images/detail/D5851-98.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D5851-98A.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL / XXL ( 亞規剪裁,標準版型 )",
+        features: [
+            "高爾夫Club系列",
+            "三扣前襟襯衫領",
+            "彈性纖維布料",
+            "橫向3D透氣網眼",
+            "材質柔軟 觸感冰涼",
+            "反光功能素材"
+        ],
+        material: "87% 聚酯纖維, 13% 彈性纖維",
+        featureIcons: [],
+        description: "▪ 彈性布料具有良好的延展性，活動更自如。<br>▪ 材質特性能與環境溫度平衡，瞬間降溫。<br>▪ 網眼織法，有效提升透氣。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 700,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "冰感機能Polo衫(短袖) ",
+        style: "D5855",
+        price: "2,160",
+        mainImage: "images/detail/D5855_98.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D5855-13.jpg",
+                colorName: "淺灰",
+                colorNo: "13",
+                isActive: false
+            },
+            {
+                image: "images/detail/D5855_98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                isActive: true
+            },
+            {
+                image: "images/detail/D5855_98-A.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/D5855-13(1).jpg",
+                colorName: "淺灰",
+                colorNo: "13",
+                mainImage: "images/detail/D5855-13.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/D5855-98.jpg",
+                colorName: "藍灰",
+                colorNo: "98",
+                mainImage: "images/detail/D5855_98.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/D5855_98-A.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL ( 亞規剪裁,標準版型 )",
+        features: [
+            "高爾夫Club系列",
+            "三扣前襟襯衫領",
+            "陽離子彈性布料",
+            "格柵狀高透網眼",
+            "材質柔軟 觸感冰涼",
+            "反光功能素材"
+        ],
+        material: "57.1% 尼龍, 26.7% 聚酯纖維, 16.2% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "▪ 彈性布料具有良好的延展性，活動更自如。<br>▪ 材質特性能與環境溫度平衡，瞬間降溫。<br>▪ 網眼織法，有效提升透氣。",
         notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
     },
     {
@@ -1981,6 +2805,115 @@ export const detail = [
             }
         ],
         description: "尼龍塔斯隆布料，立挺厚實、耐用耐磨。<br>內裏搖粒絨柔軟蓬鬆，蓄熱保暖。<br>拉鍊口袋配置，收納物品不掉落。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 624,
+        name_en: "Men's Stretch Nylon Golf Pants",
+        name_tw: "冰感彈性高球長褲",
+        style: "P4680",
+        price: "1,960",
+        mainImage: "images/detail/P4680-03.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/P4680-03.jpg",
+                colorName: "卡其",
+                colorNo: "03",
+                isActive: true
+            },
+            {
+                image: "images/detail/P4680-10.jpg",
+                colorName: "黑色",
+                colorNo: "10",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/P4680-03.jpg",
+                colorName: "卡其",
+                colorNo: "03",
+                mainImage: "images/detail/P4680-03.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/P4680-10.jpg",
+                colorName: "黑色",
+                colorNo: "10",
+                mainImage: "images/detail/P4680-10.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL ( 亞規合身 )",
+        features: [
+            "經編彈性布料",
+            "觸感冰涼滑順",
+            "FIT 修身剪裁",
+            "口袋 (前×2 後×2)",
+            "反光功能LOGO"
+        ],
+        material: "78% 尼龍, 22% 彈性纖維",
+        featureIcons: [],
+        description: "▪ 輕量、彈性的高機能褲款。<br>▪ 伸縮材質提供更佳的延展性。<br>▪ 布料冰感滑順，提供極佳的舒適感",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 646,
+        name_en: "Men's Tech Stretch Polo",
+        name_tw: "冰感機能Polo衫(短袖) ",
+        style: "D4653",
+        price: "1,580",
+        mainImage: "images/detail/D4653-13.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/D4653-13.jpg",
+                colorName: "淺灰",
+                colorNo: "13",
+                isActive: true
+            },
+            {
+                image: "images/detail/D4653-19.jpg",
+                colorName: "黑麻",
+                colorNo: "19",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/D4653-13.jpg",
+                colorName: "淺灰",
+                colorNo: "13",
+                mainImage: "images/detail/D4653-13.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/D4653-19.jpg",
+                colorName: "黑麻",
+                colorNo: "19",
+                mainImage: "images/detail/D4653-19.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL (  亞規剪裁,標準版型 )",
+        features: [
+            "高爾夫Club系列",
+            "三扣前襟襯衫領",
+            "小磚格緹花雙色布",
+            "材質柔軟 觸感冰涼",
+            "反光功能素材"
+        ],
+        material: "69.4% 尼龍, 21.1% 聚酯纖維, 9.5% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Breathable icon 12.jpg",
+                name: "具透氣性"
+            }
+        ],
+        description: "▪ 布料具有良好的延展性，活動自如。<br>▪ 手感滑爽冰涼，有感降低溫度。<br>▪ 前門襟有反光條設計。",
         notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
     },
     {

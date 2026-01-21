@@ -3,6 +3,8 @@ import { detail } from "~/constant/detail";
 
 // 獲取路由和查詢參數
 const route = useRoute();
+const config = useRuntimeConfig();
+const basePath = config.public.basePath;
 const productId = computed(() => {
     const idParam = route.query.id;
     return idParam ? parseInt(idParam as string) : null;
@@ -103,10 +105,10 @@ watch(product, (newProduct) => {
                 <div class="pdt_detail_container">
                     <!-- 商品詳細資訊 Header -->
                     <section class="row pdt_detail-hd">
-                        <div class="col-sm-7">
+                        <div class="w-full col-sm-7">
                             <div class="pdt_detail-pic">
                                 <div class="pic">
-                                    <img :src="currentMainImage" :alt="`${product.name_tw} - ${selectedColor?.colorName || ''}`" />
+                                    <img :src="`${basePath}${currentMainImage}`" :alt="`${product.name_tw} - ${selectedColor?.colorName || ''}`" />
                                 </div>
                             </div>
                             <div class="pdt_detail-thumbnail_list">
@@ -118,13 +120,13 @@ watch(product, (newProduct) => {
                                         :class="{ 'js-active': thumbnail.isActive }"
                                         @click="selectThumbnail(thumbnail, index)">
                                         <div class="pic">
-                                            <img :src="thumbnail.image" :alt="`${product.name_tw} - ${thumbnail.colorName}`" />
+                                            <img :src="`${basePath}${thumbnail.image}`" :alt="`${product.name_tw} - ${thumbnail.colorName}`" />
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="w-full col-sm-5">
                             <div class="pdt_detail-intro">
                                 <div class="intro_row name_en">
                                     <h3 class="inner title">{{ product.name_en }}</h3>
@@ -162,7 +164,7 @@ watch(product, (newProduct) => {
                                                     @click="selectColor(color, index)">
                                                     <figure class="color_item-pic">
                                                         <div class="pic">
-                                                            <img :src="color.image" :alt="color.colorName" />
+                                                            <img :src="`${basePath}${color.image}`" :alt="color.colorName" />
                                                         </div>
                                                         <figcaption class="pic_name">{{ color.colorName }}</figcaption>
                                                     </figure>
@@ -201,7 +203,7 @@ watch(product, (newProduct) => {
                                             class="feature_icon_item">
                                             <figure class="feature_icon_item-pic">
                                                 <div class="pic">
-                                                    <img :src="icon.image" :alt="icon.name" />
+                                                    <img :src="`${basePath}${icon.image}`" :alt="icon.name" />
                                                 </div>
                                                 <figcaption class="pic_name">{{ icon.name }}</figcaption>
                                             </figure>

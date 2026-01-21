@@ -91,7 +91,7 @@ const basePath = config.public.basePath;
                             </NuxtLink>
                         </li>
                         <li class="main_nav-item">
-                            <NuxtLink to="/bicycle_men">
+                            <NuxtLink to="/bicycle">
                                 <div class="inner text-center">
                                     <span class="txt1">自行車系列</span
                                     ><span class="small-txt">BICYCIE</span>
