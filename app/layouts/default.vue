@@ -162,9 +162,7 @@ const basePath = config.public.basePath;
                         <li class="float-left">
                             <NuxtLink to="/faq">常見問題</NuxtLink>
                         </li>
-                        <li class="float-left">
-                            <NuxtLink to="/job">企業徵才資訊 / Job</NuxtLink>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="footer-3 row no-gutters">
@@ -308,7 +306,7 @@ const basePath = config.public.basePath;
 
 /* Page Container */
 .page_container {
-    @apply min-h-screen bg-white transition-all duration-300 ease-[cubic-bezier(0.165,0.84,0.44,1)];
+    @apply bg-white transition-all duration-300 ease-[cubic-bezier(0.165,0.84,0.44,1)];
 }
 
 /* Footer */

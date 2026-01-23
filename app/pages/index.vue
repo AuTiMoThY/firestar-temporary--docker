@@ -29,8 +29,14 @@ const top_pdtList = ref(top_pdt.map(item => ({
                 <div v-for="item in bannerList" :key="item.id" class="banner_item" :data-id="item.id">
                     <NuxtLink :to="item.link">
                         <div class="pic">
-                            <img class="d-none d-sm-block" :src="`${basePath}${item.image}`" />
-                            <img class="d-sm-none" :src="`${basePath}${item.image_mobile}`" />
+                            <img 
+                                class="d-none d-sm-block banner-image" 
+                                :src="`${basePath}${item.image}`"
+                            />
+                            <img 
+                                class="d-sm-none banner-image" 
+                                :src="`${basePath}${item.image_mobile}`"
+                            />
                         </div>
                     </NuxtLink>
                 </div>
@@ -44,7 +50,11 @@ const top_pdtList = ref(top_pdt.map(item => ({
                     <li v-for="item in new_pdtList" :key="item.id" class="new_pdt-item">
                         <NuxtLink class="inner" :to="item.link">
                             <div class="pic">
-                                <img :src="`${basePath}${item.image}`" :alt="item.alt" />
+                                <img 
+                                    :src="`${basePath}${item.image}`" 
+                                    :alt="item.alt"
+                                    class="product-image"
+                                />
                             </div>
                             <span class="inner-more">
                                 <div class="txt">了解更多</div>
@@ -62,14 +72,22 @@ const top_pdtList = ref(top_pdt.map(item => ({
                     <li class="pdt_category-item col-sm-6">
                         <NuxtLink class="inner" to="/new_products?type=1">
                             <div class="pic">
-                                <img :src="`${basePath}images/MENS01.jpg`" alt="MEN'S" />
+                                <img 
+                                    :src="`${basePath}images/MENS01.jpg`" 
+                                    alt="MEN'S"
+                                    class="category-image"
+                                />
                             </div>
                         </NuxtLink>
                     </li>
                     <li class="pdt_category-item col-sm-6">
                         <NuxtLink class="inner" to="/new_products?type=2">
                             <div class="pic">
-                                <img :src="`${basePath}images/WOMENS01.jpg`" alt="WOMEN'S" />
+                                <img 
+                                    :src="`${basePath}images/WOMENS01.jpg`" 
+                                    alt="WOMEN'S"
+                                    class="category-image"
+                                />
                             </div>
                         </NuxtLink>
                     </li>
@@ -85,7 +103,11 @@ const top_pdtList = ref(top_pdt.map(item => ({
                     <li v-for="item in top_pdtList" :key="item.id" class="top_pdt-item">
                         <NuxtLink class="inner" :to="item.link">
                             <div class="pic">
-                                <img :src="`${basePath}${item.image}`" :alt="item.alt" />
+                                <img 
+                                    :src="`${basePath}${item.image}`" 
+                                    :alt="item.alt"
+                                    class="top-product-image"
+                                />
                             </div>
                         </NuxtLink>
                     </li>
@@ -316,4 +338,5 @@ const top_pdtList = ref(top_pdt.map(item => ({
         @apply hidden;
     }
 }
+
 </style>

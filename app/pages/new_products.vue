@@ -55,7 +55,14 @@ const pdtList = computed(() => {
             <!-- Banner Section -->
             <div class="pdt_banner d-none d-sm-block">
                 <div class="pic">
-                    <img :src="`${basePath}${bannerImage}`" :alt="bannerAlt" />
+                    <div class="image-loading-wrapper">
+                        <div class="image-skeleton"></div>
+                        <img 
+                            :src="`${basePath}${bannerImage}`" 
+                            :alt="bannerAlt"
+                            class="banner-image"
+                        />
+                    </div>
                 </div>
             </div>
 
@@ -71,7 +78,14 @@ const pdtList = computed(() => {
                             class="pdt_content-item w-1/2 sm:w-1/3">
                             <NuxtLink class="inner" :to="item.link">
                                 <div class="pdt_content-pic pic">
-                                    <img :src="`${basePath}${item.image}`" :alt="item.alt" />
+                                    <div class="image-loading-wrapper">
+                                        <div class="image-skeleton"></div>
+                                        <img 
+                                            :src="`${basePath}${item.image}`" 
+                                            :alt="item.alt"
+                                            class="product-image"
+                                        />
+                                    </div>
                                 </div>
                                 <div class="pdt_content-info">
                                     <div class="name">
@@ -269,5 +283,43 @@ const pdtList = computed(() => {
 
 .text-center {
     @apply text-center;
+}
+
+/* Image Loading Styles */
+.image-loading-wrapper {
+    @apply relative w-full h-full;
+}
+
+.image-skeleton {
+    @apply absolute inset-0 w-full h-full;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.image-skeleton.hidden {
+    @apply hidden;
+}
+
+.banner-image,
+.product-image {
+    @apply opacity-0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.banner-image.loaded,
+.product-image.loaded {
+    @apply opacity-100;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 </style>

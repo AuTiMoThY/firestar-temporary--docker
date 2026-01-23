@@ -8,8 +8,22 @@ const basePath = config.public.basePath;
         <!-- Banner Section -->
         <section class="banner">
             <div class="pic">
-                <img class="d-none d-sm-block" :src="`${basePath}images/banner-about.jpg`" alt="關於我們" />
-                <img class="d-sm-none" :src="`${basePath}images/banner-about-m.jpg`" alt="關於我們" />
+                <div class="image-loading-wrapper">
+                    <div class="image-skeleton"></div>
+                    <img 
+                        class="d-none d-sm-block banner-image" 
+                        :src="`${basePath}images/banner-about.jpg`" 
+                        alt="關於我們"
+                    />
+                </div>
+                <div class="image-loading-wrapper">
+                    <div class="image-skeleton"></div>
+                    <img 
+                        class="d-sm-none banner-image" 
+                        :src="`${basePath}images/banner-about-m.jpg`" 
+                        alt="關於我們"
+                    />
+                </div>
             </div>
         </section>
 
@@ -25,21 +39,42 @@ const basePath = config.public.basePath;
                     <p class="txt text-content">
                         自從運動風潮席捲著時尚圈，不少品牌因此紛紛將時裝加入各種運動元素，這種跨界結合的設計讓服裝擁有機能感，呈現濃厚的運動氣息，也創造了新穎的穿著風格。
                     </p>
-                    <img class="company_logo" :src="`${basePath}images/company-logo001.gif`" alt="Firestar Logo" />
+                    <div class="image-loading-wrapper company_logo-wrapper">
+                        <div class="image-skeleton"></div>
+                        <img 
+                            class="company_logo" 
+                            :src="`${basePath}images/company-logo001.gif`" 
+                            alt="Firestar Logo"
+                        />
+                    </div>
                     <p class="txt text-content">
                         於是Firestar 誕生，創立於1997年，是針對時下年輕人所設計的運動休閒品牌，除了著重功能性服飾的開發，更融入了fashion 元素，讓消費者有更多的選擇，無論運動&休閒、戶外&都會，都能自由的搭配出獨特風格。
                     </p>
                     <p class="txt text-content">
                         Firestar 也是早期率先運用大膽色塊拼接運動剪裁的台灣品牌，相信靈活的運用色彩，能夠大大提升整體造型的多變性。
                     </p>
-                    <img class="company_logo" :src="`${basePath}images/company-logo002.gif`" alt="Firestar Logo" />
+                    <div class="image-loading-wrapper company_logo-wrapper">
+                        <div class="image-skeleton"></div>
+                        <img 
+                            class="company_logo" 
+                            :src="`${basePath}images/company-logo002.gif`" 
+                            alt="Firestar Logo"
+                        />
+                    </div>
                     <p class="txt text-content">
                         Firestar 體現生活，以美式Lifestyle 的穿衣概念為指標，打造輕鬆愉快的穿著體驗。
                     </p>
                     <p class="txt text-content">
                         Firestar 不斷創新，致力於開發質感與功能性兼具的服飾，期望以親民的價格，提供高CP值的產品給消費者，在設計與開發中亦能照顧到想要簡單享受品味的您，花小錢就可以打造多變造型，讓著用者自行塑造出多元迥異的風格；價值遠超過價格，令人拭目以待!
                     </p>
-                    <img class="company_logo" :src="`${basePath}images/company-logo003.jpg`" alt="Firestar Logo" />
+                    <div class="image-loading-wrapper company_logo-wrapper">
+                        <div class="image-skeleton"></div>
+                        <img 
+                            class="company_logo" 
+                            :src="`${basePath}images/company-logo003.jpg`" 
+                            alt="Firestar Logo"
+                        />
+                    </div>
                     <div class="facebook_btn">
                         <!-- Facebook Like Button - 可以根據需要添加 -->
                     </div>
@@ -108,12 +143,15 @@ const basePath = config.public.basePath;
 }
 
 .banner img {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-none;
+    @apply w-full max-w-none;
 }
 
 /* Page Title */
 .page_title {
-    @apply text-center text-2xl font-bold my-8;
+    @apply text-center text-2xl font-bold py-[0.2rem];
+    background-color: rgb(215, 24, 32);
+    color: rgb(247, 247, 247);
+
 }
 
 /* Row Layout */
@@ -156,8 +194,54 @@ const basePath = config.public.basePath;
     @apply text-base;
 }
 
+.company_logo-wrapper {
+    @apply w-full max-w-md my-6 mx-auto;
+}
+
 .company_logo {
-    @apply w-full max-w-md my-6 mx-auto block;
+    @apply w-full block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.company_logo.loaded {
+    @apply opacity-100;
+}
+
+/* Image Loading Styles */
+.image-loading-wrapper {
+    @apply relative w-full;
+}
+
+.image-skeleton {
+    @apply absolute inset-0 w-full h-full;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.image-skeleton.hidden {
+    @apply hidden;
+}
+
+.banner-image {
+    @apply opacity-0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.banner-image.loaded {
+    @apply opacity-100;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 .facebook_btn {
@@ -166,11 +250,12 @@ const basePath = config.public.basePath;
 
 /* Sidebar */
 .about_aside {
-    @apply w-full px-4;
+    @apply px-4;
 }
 
 .about_aside .inner {
-    @apply p-4;
+    @apply h-full p-4;
+    background-color: rgb(235, 235, 235);
 }
 
 .about_aside-sec {

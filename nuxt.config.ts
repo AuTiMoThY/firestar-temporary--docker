@@ -19,8 +19,6 @@ export default defineNuxtConfig({
       "@vueuse/nuxt"
     ],
 
-    ssr: false, // 禁用 SSR，只使用客戶端渲染
-
     // 設定基礎路徑：開發時為 /，生產環境為 /admin/
     app: {
         baseURL: basePath
@@ -45,8 +43,11 @@ export default defineNuxtConfig({
     // Vite 配置（Docker 環境中的 HMR 支援）
     vite: {
         server: {
+            // 允許外部訪問（重要：Docker 環境需要）
+            cors: true,
             hmr: {
-                host: "localhost",
+                // 在 Docker 環境中，HMR 會自動使用 devServer 的配置
+                // 如果需要自定義，可以通過環境變數設定
                 port: 8010,
             },
             watch: {
@@ -57,7 +58,26 @@ export default defineNuxtConfig({
             fs: {
                 // 允許監控的目錄（包含 app 目錄）
                 strict: false,
+                // 允許訪問的目錄
+                allow: [".."],
             },
+        },
+        // 優化構建效能
+        optimizeDeps: {
+            // 預先構建常用依賴以加快啟動速度
+            include: ["vue", "@nuxt/ui", "@vueuse/core"],
+            // 排除原生模組（.node 文件），這些模組不能通過 esbuild 預構建
+            exclude: [
+                "lightningcss",
+                "@tailwindcss/oxide",
+                "@tailwindcss/oxide-linux-x64-musl",
+                "@tailwindcss/oxide-linux-x64-gnu",
+            ],
+        },
+        build: {
+            // 在開發環境中減少構建開銷
+            minify: isProduction,
+            sourcemap: !isProduction,
         },
     },
 
@@ -70,10 +90,43 @@ export default defineNuxtConfig({
             }
         }
     },
+
+    // 優化開發環境的編譯速度
+    typescript: {
+        // 在開發環境中跳過類型檢查以加快編譯速度
+        typeCheck: isProduction,
+    },
+
+    // 優化 Nitro 配置（用於 SSR/API）
+    nitro: {
+        // 在開發環境中禁用預渲染以加快啟動速度
+        prerender: {
+            crawlLinks: false,
+        },
+    },
     runtimeConfig: {
         public: {
             version,
             basePath,
         }
+    },
+
+    // Nuxt Image 配置
+    image: {
+        // 使用本地提供者
+        provider: "ipx",
+        // 圖片品質設定
+        quality: 80,
+        // 預設格式（如果瀏覽器支援）
+        format: ["webp"],
+        // 響應式圖片尺寸
+        screens: {
+            xs: 320,
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+            xxl: 1536,
+        },
     }
 });

@@ -8,6 +8,7 @@ services:
     restart: unless-stopped
     working_dir: /app
     volumes:
+      # 使用 cached 模式以提升 Windows 上的效能
       - .:/app:cached
       - node_modules:/app/node_modules
       - .nuxt:/app/.nuxt
@@ -16,12 +17,17 @@ services:
     environment:
       NODE_ENV: ${NODE_ENV:-development}
       PORT: 8010
-      CI: "true"
       # 改善檔案監控的環境變數
       CHOKIDAR_USEPOLLING: "true"
       CHOKIDAR_INTERVAL: "300"
       WATCHPACK_POLLING: "true"
-    command: sh -lc "pnpm install && pnpm dev"
+      # 優化 Node.js 效能（在 Docker 中特別重要）
+      NODE_OPTIONS: "--max-old-space-size=4096"
+      # 禁用不必要的檢查以加快編譯
+      ESLINT_NO_DEV_ERRORS: "true"
+    # 在容器啟動時安裝依賴並啟動開發伺服器
+    # pnpm 會自動檢查依賴是否已安裝，利用 volume 快取的 node_modules 可大幅加快啟動速度
+    command: sh -c "pnpm install --frozen-lockfile && pnpm dev"
 
 volumes:
   node_modules:

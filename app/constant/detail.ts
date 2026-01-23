@@ -3225,5 +3225,205 @@ export const detail = [
         ],
         description: "▪ 彈性布料延展性佳，活動自如。<br>▪ 吸濕排汗、透氣、排汗。",
         notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 333,
+        name_en: "Men's 4-Way Stretch Woven Jacket",
+        name_tw: "輕量彈性連帽外套(單層)",
+        style: "J0571",
+        price: "1,580",
+        mainImage: "images/detail/J0571-92.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/J0571-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                isActive: false
+            },
+            {
+                image: "images/detail/J0571-92.jpg",
+                colorName: "寶藍",
+                colorNo: "92",
+                isActive: true
+            },
+            {
+                image: "images/detail/J0571-10B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/4-Way.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/J0571-10(1).jpg",
+                colorName: "黑",
+                colorNo: "10",
+                mainImage: "images/detail/J0571-10.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/J0571-92(1).jpg",
+                colorName: "寶藍",
+                colorNo: "92",
+                mainImage: "images/detail/J0571-92.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/J0571-10B.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/4-Way.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL / XXL ( 亞規剪裁,標準版型 )",
+        features: [
+            "四面彈性布料",
+            "質地柔軟 輕量防曬",
+            "反光拉鍊配置",
+            "帽緣及下襬可調式束繩",
+            "拉鍊口袋 (前×2)"
+        ],
+        material: "92% 聚酯纖維 / 8% 彈性纖維",
+        featureIcons: [
+            {
+                image: "images/detail/Stretch icon .jpg",
+                name: "彈性布料"
+            },
+            {
+                image: "images/detail/Wicking icon 12.jpg",
+                name: "吸濕排汗"
+            }
+        ],
+        description: "四面彈性布料提供絕佳的延展性。<br>簡單物理防曬，減少日曬傷害。<br>兩側拉鍊口袋，防止物品掉落。<br>反光拉鍊及LOGO，增加夜間可視率。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
+    },
+    {
+        id: 487,
+        name_en: "Men's Polyester Puffer Hooded Jacket",
+        name_tw: "可拆帽鋪棉外套",
+        style: "H1931",
+        price: "2,960",
+        mainImage: "images/detail/H1931-60.jpg",
+        thumbnails: [
+            {
+                image: "images/detail/H1931-60.jpg",
+                colorName: "軍綠",
+                colorNo: "60",
+                isActive: true
+            },
+            {
+                image: "images/detail/H1931-10.jpg",
+                colorName: "黑",
+                colorNo: "10",
+                isActive: false
+            },
+            {
+                image: "images/detail/H1931-10B.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/H1931-10C.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/H1931-10D.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            },
+            {
+                image: "images/detail/H1931-10E.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                isActive: false
+            }
+        ],
+        colors: [
+            {
+                image: "images/detail/color/H1931-60(1).jpg",
+                colorName: "軍綠",
+                colorNo: "60",
+                mainImage: "images/detail/H1931-60.jpg",
+                isActive: true
+            },
+            {
+                image: "images/detail/color/H1931-10(1).jpg",
+                colorName: "黑",
+                colorNo: "10",
+                mainImage: "images/detail/H1931-10.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-02.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/H1931-10B.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-01.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/H1931-10C.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-03.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/H1931-10D.jpg",
+                isActive: false
+            },
+            {
+                image: "images/detail/color/photo-04.jpg",
+                colorName: "特寫",
+                colorNo: "close",
+                mainImage: "images/detail/H1931-10E.jpg",
+                isActive: false
+            }
+        ],
+        size: "M / L / XL ( 標準版型 )",
+        features: [
+            "輕量高密度纖維",
+            "表面防潑水特性",
+            "手作塞棉填充",
+            "可拆式連帽設計",
+            "防水拉鍊口袋 (前×3) / 內袋 (內×1)"
+        ],
+        material: "100% 尼龍",
+        featureIcons: [
+            {
+                image: "images/detail/Windproof icon 12.jpg",
+                name: "防風"
+            },
+            {
+                image: "images/detail/Waterproof_icon14.jpg",
+                name: "防潑水"
+            },
+            {
+                image: "images/detail/Hot icon.jpg",
+                name: "蓄熱保暖"
+            }
+        ],
+        description: "手工塞棉，保暖及蓬鬆感兼顧。<br>立領設計保護頸部，防風防寒。<br>袖口魔鬼氈束口，調整阻擋冷風竄入。<br>胸前拉鍊口袋，防止物品掉落。",
+        notice: "● 顏色如與顯示器有所誤差，請以實際商品顏色為準。"
     }
 ];

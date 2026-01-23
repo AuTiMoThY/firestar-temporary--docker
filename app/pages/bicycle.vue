@@ -132,13 +132,26 @@ useHead({
         <!-- Banner Section -->
         <section class="banner">
             <div class="pic">
-                <img class="d-none d-sm-block" :src="`${basePath}images/banner-about.jpg`" alt="Banner" />
-                <img class="d-sm-none" :src="`${basePath}images/banner-about-m.jpg`" alt="Banner" />
+                <div class="image-loading-wrapper">
+                    <div class="image-skeleton"></div>
+                    <img 
+                        class="d-none d-sm-block banner-image" 
+                        :src="`${basePath}images/banner-about.jpg`" 
+                        alt="Banner"
+                    />
+                </div>
+                <div class="image-loading-wrapper">
+                    <div class="image-skeleton"></div>
+                    <img 
+                        class="d-sm-none banner-image" 
+                        :src="`${basePath}images/banner-about-m.jpg`" 
+                        alt="Banner"
+                    />
+                </div>
             </div>
         </section>
 
-        <h2 class="title red-text text-center">{{ categoryTitle }}</h2>
-
+        <h1 class="page_title">{{ categoryTitle }}</h1>
 
         <section class="row">
             <aside class="bicycle_aside col-md-3">
@@ -203,9 +216,14 @@ useHead({
                                     class="bicycle_content-pic pic" 
                                     @click.prevent="openImage(`${basePath}${product.fullImage}`)"
                                     href="javascript:void(0)">
-                                    <img 
-                                        :src="`${basePath}${product.thumbnail}`" 
-                                        :alt="product.alt" />
+                                    <div class="image-loading-wrapper">
+                                        <div class="image-skeleton"></div>
+                                        <img 
+                                            :src="`${basePath}${product.thumbnail}`" 
+                                            :alt="product.alt"
+                                            class="product-image"
+                                        />
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -218,7 +236,11 @@ useHead({
         <div v-if="showImageModal" class="image_modal" @click="closeImage">
             <div class="image_modal-content" @click.stop>
                 <button class="image_modal-close" @click="closeImage">&times;</button>
-                <img :src="selectedImage || ''" :alt="categoryTitle" />
+                <img 
+                    v-if="selectedImage"
+                    :src="selectedImage" 
+                    :alt="categoryTitle"
+                />
             </div>
         </div>
     </main>
@@ -239,19 +261,19 @@ useHead({
 
 .banner .pic {
     @apply relative w-full;
-    padding-bottom: 22.36842%;
     @apply bg-cover;
 }
 
 .banner .pic img {
-    @apply w-full max-w-none absolute inset-0 m-auto;
+    @apply w-full max-w-none m-auto;
     object-fit: cover;
 }
 
 /* Page Title */
 .page_title {
-    @apply text-center text-2xl font-bold my-6;
-    color: #333;
+    @apply text-center text-2xl font-bold py-[0.2rem];
+    background-color: rgb(215, 24, 32);
+    color: rgb(247, 247, 247);
 }
 
 /* Row Layout */
@@ -307,13 +329,13 @@ useHead({
 
 .bicycle_category-link:hover {
     background-color: #f5f5f5;
-    border-color: #1565c0;
+    border-color: #d71820;
 }
 
 .bicycle_category-link.js-active {
-    background-color: #1565c0;
+    background-color: #d71820;
     color: #fff;
-    border-color: #1565c0;
+    border-color: #d71820;
 }
 
 /* Bicycle Content */
@@ -365,7 +387,7 @@ useHead({
 }
 
 .bicycle_content-pic:hover {
-    border-color: #1565c0;
+    border-color: #d71820;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -376,6 +398,44 @@ useHead({
 .bicycle_content-pic img {
     @apply w-full h-full absolute inset-0 m-auto;
     object-fit: contain;
+}
+
+/* Image Loading Styles */
+.image-loading-wrapper {
+    @apply relative w-full h-full;
+}
+
+.image-skeleton {
+    @apply absolute inset-0 w-full h-full;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.image-skeleton.hidden {
+    @apply hidden;
+}
+
+.product-image,
+.banner-image {
+    @apply opacity-0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-image.loaded,
+.banner-image.loaded {
+    @apply opacity-100;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 /* Image Modal */

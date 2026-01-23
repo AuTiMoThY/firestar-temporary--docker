@@ -108,7 +108,14 @@ watch(product, (newProduct) => {
                         <div class="w-full col-sm-7">
                             <div class="pdt_detail-pic">
                                 <div class="pic">
-                                    <img :src="`${basePath}${currentMainImage}`" :alt="`${product.name_tw} - ${selectedColor?.colorName || ''}`" />
+                                    <div class="image-loading-wrapper">
+                                        <div class="image-skeleton"></div>
+                                        <img 
+                                            :src="`${basePath}${currentMainImage}`" 
+                                            :alt="`${product.name_tw} - ${selectedColor?.colorName || ''}`"
+                                            class="product-main-image"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div class="pdt_detail-thumbnail_list">
@@ -120,7 +127,14 @@ watch(product, (newProduct) => {
                                         :class="{ 'js-active': thumbnail.isActive }"
                                         @click="selectThumbnail(thumbnail, index)">
                                         <div class="pic">
-                                            <img :src="`${basePath}${thumbnail.image}`" :alt="`${product.name_tw} - ${thumbnail.colorName}`" />
+                                            <div class="image-loading-wrapper thumbnail-wrapper">
+                                                <div class="image-skeleton"></div>
+                                                <img 
+                                                    :src="`${basePath}${thumbnail.image}`" 
+                                                    :alt="`${product.name_tw} - ${thumbnail.colorName}`"
+                                                    class="thumbnail-image"
+                                                />
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -164,7 +178,14 @@ watch(product, (newProduct) => {
                                                     @click="selectColor(color, index)">
                                                     <figure class="color_item-pic">
                                                         <div class="pic">
-                                                            <img :src="`${basePath}${color.image}`" :alt="color.colorName" />
+                                                            <div class="image-loading-wrapper color-wrapper">
+                                                                <div class="image-skeleton"></div>
+                                                                <img 
+                                                                    :src="`${basePath}${color.image}`" 
+                                                                    :alt="color.colorName"
+                                                                    class="color-image"
+                                                                />
+                                                            </div>
                                                         </div>
                                                         <figcaption class="pic_name">{{ color.colorName }}</figcaption>
                                                     </figure>
@@ -203,7 +224,14 @@ watch(product, (newProduct) => {
                                             class="feature_icon_item">
                                             <figure class="feature_icon_item-pic">
                                                 <div class="pic">
-                                                    <img :src="`${basePath}${icon.image}`" :alt="icon.name" />
+                                                    <div class="image-loading-wrapper icon-wrapper">
+                                                        <div class="image-skeleton"></div>
+                                                        <img 
+                                                            :src="`${basePath}${icon.image}`" 
+                                                            :alt="icon.name"
+                                                            class="icon-image"
+                                                        />
+                                                    </div>
                                                 </div>
                                                 <figcaption class="pic_name">{{ icon.name }}</figcaption>
                                             </figure>
@@ -310,7 +338,7 @@ watch(product, (newProduct) => {
 
 .pdt_detail-thumbnail_item.js-active {
     opacity: 1;
-    border: 2px solid #1565c0;
+    border: 2px solid #d71820;
 }
 
 .pdt_detail-thumbnail_item .pic {
@@ -376,7 +404,7 @@ watch(product, (newProduct) => {
 
 .color_item.js-active {
     opacity: 1;
-    border: 2px solid #1565c0;
+    border: 2px solid #d71820;
     border-radius: 4px;
 }
 
@@ -459,6 +487,48 @@ watch(product, (newProduct) => {
 
 .pdt_detail-bd .content p {
     @apply mb-2;
+}
+
+/* Image Loading Styles */
+.image-loading-wrapper {
+    @apply relative w-full h-full;
+}
+
+.image-skeleton {
+    @apply absolute inset-0 w-full h-full;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.image-skeleton.hidden {
+    @apply hidden;
+}
+
+.product-main-image,
+.thumbnail-image,
+.color-image,
+.icon-image {
+    @apply opacity-0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-main-image.loaded,
+.thumbnail-image.loaded,
+.color-image.loaded,
+.icon-image.loaded {
+    @apply opacity-100;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 /* Grid System */
