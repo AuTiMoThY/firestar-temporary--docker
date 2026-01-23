@@ -156,15 +156,7 @@ const basePath = config.public.basePath;
                 </div>
                 <div class="footer-2 row no-gutters">
                     <ul class="cf lis-n mb-0">
-                        <li class="float-left">
-                            <NuxtLink to="/legal">法律聲明</NuxtLink>
-                        </li>
-                        <li class="float-left">
-                            <NuxtLink to="/faq">常見問題</NuxtLink>
-                        </li>
-                        <li class="float-left">
-                            <NuxtLink to="/job">企業徵才資訊 / Job</NuxtLink>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="footer-3 row no-gutters">
