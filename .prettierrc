@@ -12,6 +12,12 @@
             "options": {
                 "parser": "html"
             }
+        },
+        {
+            "files": "*.html",
+            "options": {
+                "parser": "html"
+            }
         }
     ]
 }

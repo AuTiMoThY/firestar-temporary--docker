@@ -7,9 +7,13 @@ const processEnv = (
 const isProduction = processEnv?.NODE_ENV === "production";
 
 const version = "20260120";
-const basePath = isProduction ? "/firestar-202601/" : "/"
+const basePath = isProduction ? "/" : "/"
 
 console.log("======================", `http://localhost:${processEnv?.FRONTEND_PORT}`);
+
+// 動態生成所有 detail 路由（用於 prerender）
+import { detail } from "./app/constant/detail";
+const detailRoutes = detail.map((item) => `/detail?id=${item.id}`);
 
 export default defineNuxtConfig({
     modules: [
@@ -129,4 +133,25 @@ export default defineNuxtConfig({
             xxl: 1536,
         },
     }
+    // Nitro 配置（用於 prerender）
+    nitro: {
+        prerender: {
+            // 自動從頁面中發現連結並預渲染
+            crawlLinks: true,
+            // 如果遇到錯誤，繼續處理其他路由（不中斷整個流程）
+            failOnError: false,
+            // 明確指定要預渲染的路由（包含所有 detail 路由）
+            routes: [
+                "/",
+                "/about",
+                "/store",
+                "/bicycle",
+                "/new_products?type=1",
+                "/new_products?type=2",
+                "/new_products?type=3",
+                ...detailRoutes
+            ]
+        }
+    },
+
 });
