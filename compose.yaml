@@ -17,17 +17,20 @@ services:
     environment:
       NODE_ENV: ${NODE_ENV:-development}
       PORT: 8010
-      # 改善檔案監控的環境變數
+      # 改善檔案監控的環境變數（僅在 Windows 上需要輪詢）
+      # 如果使用 WSL2 或 Linux，可以設為 false 以提升性能
       CHOKIDAR_USEPOLLING: "true"
-      CHOKIDAR_INTERVAL: "300"
+      CHOKIDAR_INTERVAL: "1000"
       WATCHPACK_POLLING: "true"
       # 優化 Node.js 效能（在 Docker 中特別重要）
-      NODE_OPTIONS: "--max-old-space-size=4096"
+      NODE_OPTIONS: "--max-old-space-size=4096 --no-warnings"
+      # Vite 開發伺服器優化
+      VITE_HMR_PORT: "8010"
       # 禁用不必要的檢查以加快編譯
       ESLINT_NO_DEV_ERRORS: "true"
-    # 在容器啟動時安裝依賴並啟動開發伺服器
-    # pnpm 會自動檢查依賴是否已安裝，利用 volume 快取的 node_modules 可大幅加快啟動速度
-    command: sh -c "pnpm install --frozen-lockfile && pnpm dev"
+    # 直接啟動開發伺服器（依賴已在 Dockerfile 中安裝）
+    # 如果依賴變更，需要重新構建映像：docker compose build
+    command: pnpm dev
 
 volumes:
   node_modules:

@@ -489,47 +489,6 @@ watch(product, (newProduct) => {
     @apply mb-2;
 }
 
-/* Image Loading Styles */
-.image-loading-wrapper {
-    @apply relative w-full h-full;
-}
-
-.image-skeleton {
-    @apply absolute inset-0 w-full h-full;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: skeleton-loading 1.5s ease-in-out infinite;
-    border-radius: 4px;
-    z-index: 1;
-}
-
-.image-skeleton.hidden {
-    @apply hidden;
-}
-
-.product-main-image,
-.thumbnail-image,
-.color-image,
-.icon-image {
-    @apply opacity-0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.product-main-image.loaded,
-.thumbnail-image.loaded,
-.color-image.loaded,
-.icon-image.loaded {
-    @apply opacity-100;
-}
-
-@keyframes skeleton-loading {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
-}
 
 /* Grid System */
 .row {

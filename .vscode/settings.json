@@ -1,10 +1,6 @@
 {
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": false
     },
-    "[vue]": {
-        "editor.defaultFormatter": "Vue.volar",
-        "editor.formatOnSave": true
-    }
 }

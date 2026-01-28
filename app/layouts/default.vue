@@ -28,14 +28,6 @@ const basePath = config.public.basePath;
 
             <!-- Header -->
             <header class="main_header">
-                <div class="logo">
-                    <NuxtLink to="/">
-                        <img class="logo-img d-none d-md-block" :src="`${basePath}images/logo.svg`"
-                            alt="Firestar 方元開發有限公司" />
-                        <img class="logo-m-img d-md-none" :src="`${basePath}images/logo-m.svg`"
-                            alt="Firestar 方元開發有限公司" />
-                    </NuxtLink>
-                </div>
                 <div class="m_menu" id="m_menu">
                     <div class="group">
                         <div class="line1"></div>
@@ -44,6 +36,15 @@ const basePath = config.public.basePath;
                         <div class="line4"></div>
                     </div>
                 </div>
+                <div class="logo">
+                    <NuxtLink to="/">
+                        <img class="logo-img d-none d-md-block" :src="`${basePath}images/logo.svg`"
+                            alt="Firestar 方元開發有限公司" />
+                        <img class="logo-m-img d-md-none" :src="`${basePath}images/logo-m.svg`"
+                            alt="Firestar 方元開發有限公司" />
+                    </NuxtLink>
+                </div>
+
                 <nav class="main_nav d-none d-md-block">
                     <ul class="cf lis-n">
                         <li class="main_nav-item">
@@ -166,7 +167,8 @@ const basePath = config.public.basePath;
 }
 
 .page_wrap>.inner {
-    @apply relative left-0 transition-all duration-500 ease-[cubic-bezier(0.455, 0.03, 0.515, 0.955)];
+    @apply relative left-0;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 /* Top Bar */
@@ -180,12 +182,12 @@ const basePath = config.public.basePath;
 
 /* Main Header */
 .main_header {
-    @apply relative z-[70] flex items-center justify-between w-full h-[36px] max-xl:h-[66px] max-md:h-[50px];
+    @apply relative z-[70] flex items-center justify-between w-full h-[36px] max-xl:h-[66px] max-md:h-[50px] max-sm:px-4;
     background-image: linear-gradient(to bottom, #ffffff, #d2d2d2);
 }
 
 .main_header .logo {
-    @apply z-[2] flex w-40 h-9;
+    @apply max-sm:absolute max-sm:left-1/2 max-sm:top-1/2 max-sm:-translate-x-1/2 max-sm:-translate-y-1/2 z-[2] flex w-40 h-9;
 }
 
 @media (min-width: 768px) {
@@ -283,7 +285,8 @@ const basePath = config.public.basePath;
 
 /* Page Container */
 .page_container {
-    @apply bg-white transition-all duration-300 ease-[cubic-bezier(0.165, 0.84, 0.44, 1)];
+    @apply bg-white;
+    transition: all 0.3s cubic-bezier(0.0.165, 0.84, 0.44, 1);
 }
 
 /* Footer */
@@ -429,4 +432,62 @@ const basePath = config.public.basePath;
 .icon-facebook .icon {
     @apply w-full h-full;
 }
+
+
+.m_menu {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .m_menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    z-index: 101;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+  }
+  .m_menu .group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+  .m_menu .group div {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #575757;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+  }
+  .m_menu .group .line1 {
+    top: 0;
+  }
+  .m_menu .group .line2, .m_menu .group .line3 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .m_menu .group .line3 {
+    opacity: 0;
+  }
+  .m_menu .group .line4 {
+    bottom: 0;
+  }
+  .m_menu.js-open .group {
+    top: -2px;
+    transform: rotate(360deg);
+  }
+  .m_menu.js-open .group .line1, .m_menu.js-open .group .line4 {
+    top: 0;
+    opacity: 0;
+  }
+  .m_menu.js-open .group .line2 {
+    transform: rotate(45deg);
+  }
+  .m_menu.js-open .group .line3 {
+    opacity: 1;
+    transform: rotate(-45deg);
+  }
+}
+
 </style>

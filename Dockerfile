@@ -7,13 +7,15 @@ RUN npm install -g pnpm@10.24.0
 # 設定工作目錄
 WORKDIR /app
 
-# 複製 package.json 和 pnpm-lock.yaml（用於檢查依賴是否已安裝）
+# 複製 package.json 和 pnpm-lock.yaml（用於 Docker 層級快取）
 COPY package.json pnpm-lock.yaml ./
 
-# 不在這裡安裝依賴，等待容器啟動時處理
-# 這樣可以避免每次代碼變更都需要重新構建 Docker 映像
+# 在構建時安裝依賴（利用 Docker 層級快取）
+# 只有當 package.json 或 pnpm-lock.yaml 變更時才會重新執行此步驟
+RUN pnpm install --frozen-lockfile
 
 # 暴露端口
 EXPOSE 8010
 
-# 開發環境會延遲到容器啟動時才執行依賴安裝和啟動
+# 預設命令（可在 compose.yaml 中覆蓋）
+CMD ["pnpm", "dev"]

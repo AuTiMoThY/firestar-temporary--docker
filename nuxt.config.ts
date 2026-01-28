@@ -56,8 +56,8 @@ export default defineNuxtConfig({
             },
             watch: {
                 usePolling: true, // Docker 環境中需要輪詢來檢測文件變更
-                interval: 300, // 增加輪詢間隔以減少 CPU 使用
-                binaryInterval: 1000, // 二進制文件的輪詢間隔
+                interval: 1000, // 增加輪詢間隔以減少 CPU 使用（從 300ms 提升到 1000ms）
+                binaryInterval: 2000, // 二進制文件的輪詢間隔（從 1000ms 提升到 2000ms）
             },
             fs: {
                 // 允許監控的目錄（包含 app 目錄）
@@ -77,7 +77,11 @@ export default defineNuxtConfig({
                 "@tailwindcss/oxide-linux-x64-musl",
                 "@tailwindcss/oxide-linux-x64-gnu",
             ],
+            // 強制預構建（加快後續啟動速度）
+            force: false,
         },
+        // 開發環境優化
+        logLevel: "warn", // 減少日誌輸出
         build: {
             // 在開發環境中減少構建開銷
             minify: isProduction,
@@ -105,7 +109,21 @@ export default defineNuxtConfig({
     nitro: {
         // 在開發環境中禁用預渲染以加快啟動速度
         prerender: {
-            crawlLinks: false,
+            // 自動從頁面中發現連結並預渲染
+            crawlLinks: true,
+            // 如果遇到錯誤，繼續處理其他路由（不中斷整個流程）
+            failOnError: false,
+            // 明確指定要預渲染的路由（包含所有 detail 路由）
+            routes: [
+                "/",
+                "/about",
+                "/store",
+                "/bicycle",
+                "/new_products?type=1",
+                "/new_products?type=2",
+                "/new_products?type=3",
+                ...detailRoutes
+            ]
         },
     },
     runtimeConfig: {
@@ -133,25 +151,5 @@ export default defineNuxtConfig({
             xxl: 1536,
         },
     }
-    // Nitro 配置（用於 prerender）
-    nitro: {
-        prerender: {
-            // 自動從頁面中發現連結並預渲染
-            crawlLinks: true,
-            // 如果遇到錯誤，繼續處理其他路由（不中斷整個流程）
-            failOnError: false,
-            // 明確指定要預渲染的路由（包含所有 detail 路由）
-            routes: [
-                "/",
-                "/about",
-                "/store",
-                "/bicycle",
-                "/new_products?type=1",
-                "/new_products?type=2",
-                "/new_products?type=3",
-                ...detailRoutes
-            ]
-        }
-    },
 
 });

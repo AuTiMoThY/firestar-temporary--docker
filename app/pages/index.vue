@@ -234,7 +234,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
 
 /* Top Products */
 .top_pdt-list {
-    @apply flex m-0 py-4;
+    @apply grid grid-cols-4 gap-4 m-0 py-4 max-sm:grid-cols-2;
 }
 
 .top_pdt-title {
@@ -242,7 +242,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
 }
 
 .top_pdt-item {
-    @apply w-1/4 px-4;
+    /* @apply col-s; */
 }
 
 .top_pdt-item>.inner {
