@@ -132,22 +132,8 @@ useHead({
         <!-- Banner Section -->
         <section class="banner">
             <div class="pic">
-                <div class="image-loading-wrapper">
-                    <div class="image-skeleton"></div>
-                    <img 
-                        class="d-none d-sm-block banner-image" 
-                        :src="`${basePath}images/banner-about.jpg`" 
-                        alt="Banner"
-                    />
-                </div>
-                <div class="image-loading-wrapper">
-                    <div class="image-skeleton"></div>
-                    <img 
-                        class="d-sm-none banner-image" 
-                        :src="`${basePath}images/banner-about-m.jpg`" 
-                        alt="Banner"
-                    />
-                </div>
+                <img class="d-none d-sm-block banner-image" :src="`${basePath}images/banner-about.jpg`" alt="Banner" />
+                <img class="d-sm-none banner-image" :src="`${basePath}images/banner-about-m.jpg`" alt="Banner" />
             </div>
         </section>
 
@@ -160,41 +146,31 @@ useHead({
                     <nav class="bicycle_category">
                         <ul class="cf lis-n bicycle_category-list">
                             <li class="bicycle_category-item">
-                                <NuxtLink 
-                                    :to="`/bicycle?type=men`" 
-                                    :class="{ 'js-active': type === 'men' }"
+                                <NuxtLink :to="`/bicycle?type=men`" :class="{ 'js-active': type === 'men' }"
                                     class="bicycle_category-link">
                                     男自行車衣
                                 </NuxtLink>
                             </li>
                             <li class="bicycle_category-item">
-                                <NuxtLink 
-                                    :to="`/bicycle?type=women`" 
-                                    :class="{ 'js-active': type === 'women' }"
+                                <NuxtLink :to="`/bicycle?type=women`" :class="{ 'js-active': type === 'women' }"
                                     class="bicycle_category-link">
                                     女自行車衣
                                 </NuxtLink>
                             </li>
                             <li class="bicycle_category-item">
-                                <NuxtLink 
-                                    :to="`/bicycle?type=pants`" 
-                                    :class="{ 'js-active': type === 'pants' }"
+                                <NuxtLink :to="`/bicycle?type=pants`" :class="{ 'js-active': type === 'pants' }"
                                     class="bicycle_category-link">
                                     自行車褲
                                 </NuxtLink>
                             </li>
                             <li class="bicycle_category-item">
-                                <NuxtLink 
-                                    :to="`/bicycle?type=sleevelet`" 
-                                    :class="{ 'js-active': type === 'sleevelet' }"
+                                <NuxtLink :to="`/bicycle?type=sleevelet`" :class="{ 'js-active': type === 'sleevelet' }"
                                     class="bicycle_category-link">
                                     自行車袖套
                                 </NuxtLink>
                             </li>
                             <li class="bicycle_category-item">
-                                <NuxtLink 
-                                    :to="`/bicycle?type=headscarf`" 
-                                    :class="{ 'js-active': type === 'headscarf' }"
+                                <NuxtLink :to="`/bicycle?type=headscarf`" :class="{ 'js-active': type === 'headscarf' }"
                                     class="bicycle_category-link">
                                     自行車頭巾
                                 </NuxtLink>
@@ -208,22 +184,13 @@ useHead({
                 <div class="inner">
                     <div class="bicycle_content-list">
                         <ul class="cf lis-n row">
-                            <li 
-                                v-for="(product, index) in categoryProducts" 
-                                :key="index"
+                            <li v-for="(product, index) in categoryProducts" :key="index"
                                 class="bicycle_content-item col-4">
-                                <a 
-                                    class="bicycle_content-pic pic" 
+                                <a class="bicycle_content-pic pic"
                                     @click.prevent="openImage(`${basePath}${product.fullImage}`)"
                                     href="javascript:void(0)">
-                                    <div class="image-loading-wrapper">
-                                        <div class="image-skeleton"></div>
-                                        <img 
-                                            :src="`${basePath}${product.thumbnail}`" 
-                                            :alt="product.alt"
-                                            class="product-image"
-                                        />
-                                    </div>
+                                    <img :src="`${basePath}${product.thumbnail}`" :alt="product.alt"
+                                        class="product-image" />
                                 </a>
                             </li>
                         </ul>
@@ -236,11 +203,7 @@ useHead({
         <div v-if="showImageModal" class="image_modal" @click="closeImage">
             <div class="image_modal-content" @click.stop>
                 <button class="image_modal-close" @click="closeImage">&times;</button>
-                <img 
-                    v-if="selectedImage"
-                    :src="selectedImage" 
-                    :alt="categoryTitle"
-                />
+                <img v-if="selectedImage" :src="selectedImage" :alt="categoryTitle" />
             </div>
         </div>
     </main>
@@ -281,7 +244,7 @@ useHead({
     @apply flex flex-wrap -mx-2;
 }
 
-.row > * {
+.row>* {
     @apply px-2;
 }
 
@@ -300,7 +263,7 @@ useHead({
     }
 }
 
-.bicycle_aside > .inner {
+.bicycle_aside>.inner {
     @apply w-full;
     padding: 1rem;
 }
@@ -343,7 +306,7 @@ useHead({
     /* @apply w-full; */
 }
 
-.bicycle_content > .inner {
+.bicycle_content>.inner {
     @apply w-full;
     padding: 1rem;
 }
@@ -398,44 +361,6 @@ useHead({
 .bicycle_content-pic img {
     @apply w-full h-full absolute inset-0 m-auto;
     object-fit: contain;
-}
-
-/* Image Loading Styles */
-.image-loading-wrapper {
-    @apply relative w-full h-full;
-}
-
-.image-skeleton {
-    @apply absolute inset-0 w-full h-full;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    animation: skeleton-loading 1.5s ease-in-out infinite;
-    border-radius: 4px;
-    z-index: 1;
-}
-
-.image-skeleton.hidden {
-    @apply hidden;
-}
-
-.product-image,
-.banner-image {
-    @apply opacity-0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.product-image.loaded,
-.banner-image.loaded {
-    @apply opacity-100;
-}
-
-@keyframes skeleton-loading {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
 }
 
 /* Image Modal */
