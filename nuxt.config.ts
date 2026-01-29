@@ -11,9 +11,6 @@ const basePath = isProduction ? "/" : "/"
 
 console.log("======================", `http://localhost:${processEnv?.FRONTEND_PORT}`);
 
-// 動態生成所有 detail 路由（用於 prerender）
-import { detail } from "./app/constant/detail";
-const detailRoutes = detail.map((item) => `/detail?id=${item.id}`);
 
 export default defineNuxtConfig({
     modules: [
@@ -50,14 +47,16 @@ export default defineNuxtConfig({
             // 允許外部訪問（重要：Docker 環境需要）
             cors: true,
             hmr: {
-                // 在 Docker 環境中，HMR 會自動使用 devServer 的配置
-                // 如果需要自定義，可以通過環境變數設定
+                // Docker 環境：讓瀏覽器透過 host 的 port 連上 HMR WebSocket
+                host: "localhost",
                 port: 8010,
+                protocol: "ws",
             },
             watch: {
-                usePolling: true, // Docker 環境中需要輪詢來檢測文件變更
-                interval: 1000, // 增加輪詢間隔以減少 CPU 使用（從 300ms 提升到 1000ms）
-                binaryInterval: 2000, // 二進制文件的輪詢間隔（從 1000ms 提升到 2000ms）
+                // Docker 內 inotify 收不到 host 的檔案事件，必須用輪詢
+                usePolling: true,
+                interval: 500,  // 輪詢間隔（ms），愈小愈即時，但 CPU 稍高
+                binaryInterval: 1000,
             },
             fs: {
                 // 允許監控的目錄（包含 app 目錄）
@@ -119,10 +118,9 @@ export default defineNuxtConfig({
                 "/about",
                 "/store",
                 "/bicycle",
-                "/new_products?type=1",
-                "/new_products?type=2",
-                "/new_products?type=3",
-                ...detailRoutes
+                "/new_products/men",
+                "/new_products/women",
+                "/new_products/golf",
             ]
         },
     },

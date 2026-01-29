@@ -19,7 +19,16 @@ services:
       HOST: 0.0.0.0
       PORT: 8010
       CI: "true"
-    command: sh -lc "pnpm install && pnpm dev"
+    develop:
+      watch:
+        # sync static content
+        - path: ./app
+          action: sync
+          target: /app
+          ignore:
+            - node_modules/
+
+
 volumes:
   node_modules:
     driver: local

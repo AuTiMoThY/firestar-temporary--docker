@@ -298,6 +298,10 @@ const areaInfo = computed(() => {
     @apply transition-colors duration-200;
 }
 
+.store_item:nth-child(odd) {
+    @apply bg-gray-100;
+}
+
 @media (min-width: 768px) {
     .store_item:hover {
         @apply bg-gray-50;

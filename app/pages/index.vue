@@ -70,7 +70,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
             <div class="inner">
                 <ul class="cf lis-n row no-gutters">
                     <li class="pdt_category-item col-sm-6">
-                        <NuxtLink class="inner" to="/new_products?type=1">
+                        <NuxtLink class="inner" to="/new_products/men">
                             <div class="pic">
                                 <img 
                                     :src="`${basePath}images/MENS01.jpg`" 
@@ -81,7 +81,7 @@ const top_pdtList = ref(top_pdt.map(item => ({
                         </NuxtLink>
                     </li>
                     <li class="pdt_category-item col-sm-6">
-                        <NuxtLink class="inner" to="/new_products?type=2">
+                        <NuxtLink class="inner" to="/new_products/women">
                             <div class="pic">
                                 <img 
                                     :src="`${basePath}images/WOMENS01.jpg`" 

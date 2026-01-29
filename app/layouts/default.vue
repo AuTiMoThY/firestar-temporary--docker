@@ -55,21 +55,21 @@ const basePath = config.public.basePath;
                             </NuxtLink>
                         </li>
                         <li class="main_nav-item">
-                            <NuxtLink to="/new_products?type=1">
+                            <NuxtLink to="/new_products/men">
                                 <div class="inner text-center">
                                     <span class="txt1">男性系列</span><span class="small-txt">MEN</span>
                                 </div>
                             </NuxtLink>
                         </li>
                         <li class="main_nav-item">
-                            <NuxtLink to="/new_products?type=2">
+                            <NuxtLink to="/new_products/women">
                                 <div class="inner text-center">
                                     <span class="txt1">女性系列</span><span class="small-txt">WOMEN</span>
                                 </div>
                             </NuxtLink>
                         </li>
                         <li class="main_nav-item">
-                            <NuxtLink to="/new_products?type=3">
+                            <NuxtLink to="/new_products/golf">
                                 <div class="inner text-center">
                                     <span class="txt1">高爾夫系列</span><span class="small-txt">GOLF</span>
                                 </div>
@@ -237,6 +237,7 @@ const basePath = config.public.basePath;
     a {
         @apply h-full;
         background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(223, 225, 224, 0));
+        color: #595757;
     }
 
     a:hover {

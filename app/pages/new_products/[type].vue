@@ -2,43 +2,36 @@
 import { new_products as new_products_type1 } from "~/constant/new_products-type1";
 import { new_products as new_products_type2 } from "~/constant/new_products-type2";
 import { new_products as new_products_type3 } from "~/constant/new_products-type3";
-
 const config = useRuntimeConfig();
 const basePath = config.public.basePath;
 
-// 獲取路由和查詢參數
 const route = useRoute();
 const type = computed(() => {
-    const typeParam = route.query.type;
-    // 支援 type=1（男性系列）、type=2（女性系列）、type=3（高爾夫系列）
-    if (typeParam === "2") return "2";
-    if (typeParam === "3") return "3";
-    return "1"; // 預設為 type=1（男性系列）
+    return route.params.type;
 });
-
-// 根據 type 載入對應的產品資料
 const new_products = computed(() => {
-    if (type.value === "2") return new_products_type2;
-    if (type.value === "3") return new_products_type3;
+    if (type.value === "women") return new_products_type2;
+    if (type.value === "golf") return new_products_type3;
     return new_products_type1;
 });
 
+
 // 根據 type 設定標題和 banner
 const pageTitle = computed(() => {
-    if (type.value === "2") return "女性系列 最新商品";
-    if (type.value === "3") return "高爾夫系列 最新商品";
+    if (type.value === "women") return "女性系列 最新商品";
+    if (type.value === "golf") return "高爾夫系列 最新商品";
     return "男性系列 最新商品";
 });
 
 const bannerImage = computed(() => {
-    if (type.value === "2") return "images/women_top.jpg";
-    if (type.value === "3") return "images/men_top.jpg"; // 高爾夫系列使用男性系列的 banner，或可自行設定
+    if (type.value === "women") return "images/women_top.jpg";
+    if (type.value === "golf") return "images/men_top.jpg"; // 高爾夫系列使用男性系列的 banner，或可自行設定
     return "images/men_top.jpg";
 });
 
 const bannerAlt = computed(() => {
-    if (type.value === "2") return "女性系列";
-    if (type.value === "3") return "高爾夫系列";
+    if (type.value === "women") return "女性系列";
+    if (type.value === "golf") return "高爾夫系列";
     return "男性系列";
 });
 
@@ -48,7 +41,6 @@ const pdtList = computed(() => {
     }));
 });
 </script>
-
 <template>
     <main class="content_wrapper">
         <article class="pdt_content">
@@ -73,7 +65,7 @@ const pdtList = computed(() => {
                             v-for="item in pdtList"
                             :key="item.id"
                             class="pdt_content-item w-1/2 sm:w-1/3">
-                            <NuxtLink class="inner" :to="item.link">
+                            <NuxtLink class="inner" :to="`/products/${item.id}`">
                                 <div class="pdt_content-pic pic">
                                         <img 
                                             :src="`${basePath}${item.image}`" 
